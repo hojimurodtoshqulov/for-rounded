@@ -3,10 +3,6 @@ import { Contact } from "./pages/contact/contact";
 import { Company } from "./pages/company/company";
 import { News } from "./pages/news/news";
 import { Services } from "./pages/services/services";
-import { InsideAir } from "./pages/insidePages/insideAir";
-import { InsideCustoms } from "./pages/insidePages/insideCustoms";
-import { InsideRoad } from "./pages/insidePages/insideRoad";
-import { InsideShip } from "./pages/insidePages/insideShip";
 import { Routes, Route } from "react-router-dom";
 import Aos from "aos";
 import { useEffect } from "react";
@@ -25,10 +21,6 @@ const App = () => {
 				<Route path="/news" element={<News />} />
 				<Route path="/services" element={<Services />} />
 				<Route path="/mentors" element={<Mentors />} />
-				<Route path="/services/airFreight" element={<InsideAir />} />
-				<Route path="/services/customs" element={<InsideCustoms />} />
-				<Route path="/services/roadFreight" element={<InsideRoad />} />
-				<Route path="/services/shipFreight" element={<InsideShip />} />
 			</Routes>
 		</>
 	);

@@ -35,30 +35,6 @@ const Home = () => {
 			buttonTitle: t("infoBtn"),
 		},
 	];
-	const StagesData = [
-		{
-			aos: "fade-left",
-			orderNumber: "01",
-			title: t("stages1Title"),
-			description: t("stages1Description"),
-			key: 0,
-		},
-		{
-			aos: "fade-right",
-			orderNumber: "02",
-			title: t("stages2Title"),
-			description: t("stages2Description"),
-			key: 1,
-		},
-		{
-			aos: "fade-left",
-			orderNumber: "03",
-			title: t("stages3Title"),
-			description: t("stages3Description"),
-			key: 2,
-		},
-	];
-	const successSubmit = (success) => success;
 	return (
 		<Suspense fallback="loading">
 			<div className="main home">
@@ -80,24 +56,6 @@ const Home = () => {
 					/>
 					<Light />
 				</div>
-				{/* <div id="submitDesctop" className="stages-elements">
-					<div className="wrapper">
-						<div
-							className="stages-elements-col1"
-							data-aos="fade-left"
-							data-aos-duration="1000"
-						>
-							<Stages stagesData={StagesData} />
-						</div>
-						<div
-							className="stages-elements-col2"
-							data-aos="fade-left"
-							data-aos-duration="1000"
-						>
-							<Submit success={successSubmit} />
-						</div>
-					</div>
-				</div> */}
 				<div className="courses">
 					<Carousel />
 					<Light />
