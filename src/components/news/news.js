@@ -7,14 +7,14 @@ import img2 from "../../media/tz_news2.png";
 const News1 = () => {
 	const { t } = useTranslation();
 	return (
-		<div className="newsDiv">
-			<h2>{t("news")}</h2>
+		<div className="newsDiv" data-aos="fade-up">
+			<h2 data-aos="flip-up">{t("news")}</h2>
 			<div className="newsDiv__cols">
-				<div className="newsDiv__cols__col">
+				<div className="newsDiv__cols__col" data-aos="fade-right">
 					<img className="newsDiv__cols__col-img1" src={img1} alt="" />
 					<img className="newsDiv__cols__col-img2" src={img2} alt="" />
 				</div>
-				<div className="newsDiv__cols__col">
+				<div className="newsDiv__cols__col" data-aos="fade-left">
 					<p className="newsDiv__cols__col-p">
 						Lorem ipsum dolor sit amet consectetur. Urna semper urna viverra
 						pellentesque volutpat et vitae. Consequat felis ut in pellentesque

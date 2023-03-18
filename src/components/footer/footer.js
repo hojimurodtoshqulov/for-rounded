@@ -17,8 +17,8 @@ const Footer = () => {
 	const { t } = useTranslation();
 
 	return (
-		<footer>
-			<div className="footer__col col1">
+		<footer data-aos="fade-up">
+			<div className="footer__col col1" data-aos="fade-left">
 				<Link className="nav__logo" to="/">
 					<img className="nav__logo-img" src={footerLogo} alt="nav logo" />
 					<h5>
@@ -29,77 +29,77 @@ const Footer = () => {
 				<h3>{t("education")}</h3>
 				<p>{t("stages1Description")}</p>
 			</div>
-			<div className="footer__col col2">
-				<Link to="/">
+			<div className="footer__col col2" data-aos="fade-right">
+				<Link to="/" data-aos="flip-up">
 					<span>
 						<FaChevronRight />
 					</span>
 					About Us
 				</Link>
-				<Link to="/">
+				<Link to="/" data-aos="flip-up">
 					<span>
 						<FaChevronRight />
 					</span>
 					Graduation
 				</Link>
-				<Link to="/">
+				<Link to="/" data-aos="flip-up">
 					<span>
 						<FaChevronRight />
 					</span>
 					Scholarship
 				</Link>
-				<Link to="/">
+				<Link to="/" data-aos="flip-up">
 					<span>
 						<FaChevronRight />
 					</span>
 					Admissions
 				</Link>
-				<Link to="/">
+				<Link to="/" data-aos="flip-up">
 					<span>
 						<FaChevronRight />
 					</span>
 					International
 				</Link>
-				<Link to="/">
+				<Link to="/" data-aos="flip-up">
 					<span>
 						<FaChevronRight />
 					</span>
 					Events
 				</Link>
 			</div>
-			<div className="footer__col col2">
-				<Link to="/">
+			<div className="footer__col col2" data-aos="fade-left">
+				<Link to="/" data-aos="flip-up">
 					<span>
 						<FaChevronRight />
 					</span>
 					Language
 				</Link>
-				<Link to="/">
+				<Link to="/" data-aos="flip-up">
 					<span>
 						<FaChevronRight />
 					</span>
 					WordPress
 				</Link>
-				<Link to="/">
+				<Link to="/" data-aos="flip-up">
 					<span>
 						<FaChevronRight />
 					</span>
 					Privacy
 				</Link>
-				<Link to="/">
+				<Link to="/" data-aos="flip-up">
 					<span>
 						<FaChevronRight />
 					</span>
 					FAQs
 				</Link>
-				<Link to="/">
+				<Link to="/" data-aos="flip-up">
 					<span>
 						<FaChevronRight />
 					</span>
 					Support
 				</Link>
 			</div>
-			<div className="footer__col col4">
+			<div className="footer__col col4" data-aos="fade-right">
 				<p>Звонок по Узбекистану бесплатный</p>
 				<a href="tel:+998 (99) 99-99-99">+998 (99) 99-99-99</a>
 				<Button buttonTitle={"Перезвоните нам"} />

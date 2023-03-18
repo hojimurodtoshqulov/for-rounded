@@ -8,18 +8,17 @@ const Certificates = () => {
 	const { t } = useTranslation();
 	return (
 		<div className="certificatesImages">
-			<h2>{t("certificates")}</h2>
-			<div className="certificatesImages">
-				<div className="certificatesImages__col1">
+			<h2 data-aos="flip-up">{t("certificates")}</h2>
+			<div className="certificatesImages" data-aos="fade-up">
+				<div className="certificatesImages__col1" data-aos="flip-right">
 					<img src={img1} alt="" />
-					
 				</div>
-				<div className="certificatesImages__col2">
+				<div className="certificatesImages__col2" data-aos="flip-up">
 					<div>
 						<img className="certificatesImages__col2_img1" src={img2} alt="" />
 					</div>
 				</div>
-				<div className="certificatesImages__col3">
+				<div className="certificatesImages__col3" data-aos="flip-left">
 					<img src={img3} alt="" />
 				</div>
 			</div>

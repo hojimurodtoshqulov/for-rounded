@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const Submit = ({ onClose, success }) => {
 	const { t } = useTranslation();
-// t("submitSuccess"),
+	// t("submitSuccess"),
 	success = () =>
 		toast.success(t("submitSuccess"), {
 			position: "top-right",
@@ -44,10 +44,11 @@ const Submit = ({ onClose, success }) => {
 	};
 	return (
 		<>
-			<div className="submit">
+			<div className="submit" data-aos="flip-up">
 				<h2>{t("submitTitle")}</h2>
 				<form action="" className="form" onSubmit={(e) => submit(e)}>
 					<input
+						data-aos="fade-left"
 						className="input-tell form-control"
 						onChange={(e) => handle(e)}
 						id="phone"
@@ -58,6 +59,7 @@ const Submit = ({ onClose, success }) => {
 					/>
 					{/* {console.log("data phone ----> ", data.phone)} */}
 					<input
+						data-aos="fade-right"
 						className="input-price form-control"
 						onChange={(e) => handle(e)}
 						id="price"
@@ -67,6 +69,7 @@ const Submit = ({ onClose, success }) => {
 						required
 					/>
 					<input
+						data-aos="fade-left"
 						className="input-name form-control"
 						onChange={(e) => handle(e)}
 						id="product"
@@ -76,6 +79,7 @@ const Submit = ({ onClose, success }) => {
 						required
 					/>
 					<span
+						data-aos="fade-right"
 						onClick={
 							(data.phone && data.price && data.product) ||
 							(data.phone && data.price && data.product && data.comment) !== ""
