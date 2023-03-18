@@ -1,0 +1,26 @@
+@import "../../scss/varuables.scss";
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.button {
+	display: inline-block;
+	border: 3px solid #f4013d;
+	color: #fff;
+	background: #ff00;
+	padding: 25px 50px;
+	border-radius: 15px;
+	font-family: "Aclonica", sans-serif;
+	&:hover {
+		background: #f4013d;
+		box-shadow: 0 0 20px #f4013d;
+	}
+}
+
+@media (max-width: $xs) {
+	.button {
+		padding: 0.7% 2.5%;
+		font-size: 0.9rem;
+	}
+}

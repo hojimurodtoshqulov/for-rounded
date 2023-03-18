@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Allerta+Stencil&family=Marko+One&family=Playfair+Display:wght@600;700;800&family=Rozha+One&family=Yatra+One&display=swap");
+@import url("../../scss/varuables.scss");
+// font-family: 'Allerta Stencil', sans-serif;
+
+.mentorsImages {
+	padding: 3% 7%;
+	h2 {
+		font-family: emoji;
+		font-size: 50px;
+	}
+	.mentorsImages {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		height: 500px;
+		img {
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+		&__col1 {
+			position: relative;
+			width: 20%;
+			img {
+				width: 100%;
+			}
+			h3 {
+				width: 100%;
+				position: absolute;
+				bottom: 5%;
+				left: 0;
+				text-align: center;
+			}
+		}
+		&__col2 {
+			align-self: flex-start;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 3.3rem;
+			width: 46%;
+			padding-bottom: 2.5rem;
+			border-bottom: 3px solid #f1023d;
+			div {
+				position: relative;
+				width: 45%;
+				img {
+					width: 100%;
+				}
+				&_img2 {
+				}
+				h3 {
+					width: 100%;
+					position: absolute;
+					bottom: 5%;
+					left: 0;
+					text-align: center;
+					color: #fff;
+				}
+				.mentorsImages__col2_madina {
+					color: #f1023d;
+				}
+			}
+		}
+		&__col3 {
+			width: 20%;
+			position: relative;
+			img {
+				width: 100%;
+			}
+			h3 {
+				width: 100%;
+				position: absolute;
+				bottom: 5%;
+				left: 0;
+				text-align: center;
+				color: #f1023d;
+			}
+		}
+	}
+	.mentorsNumbers {
+		display: flex;
+		justify-content: space-between;
+		width: 60%;
+		margin: 0 auto;
+		text-align: center;
+		&__col {
+			width: 24%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			gap: 1rem;
+			transition: 2s;
+
+			&:hover {
+				transform: perspective(200px) rotateY(360deg);
+			}
+			h3 {
+				font-family: "Allerta Stencil", sans-serif;
+				color: #f1023d;
+				font-weight: 100;
+				font-size: 40px;
+				transition: 2s;
+				cursor: pointer;
+			}
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.mentorsImages {
+		h2 {
+			font-family: emoji;
+			font-size: 50px;
+		}
+		.mentorsImages {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+			height: 500px;
+			img {
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
+			&__col1 {
+				position: relative;
+				width: 23%;
+				img {
+					width: 100%;
+				}
+				h3 {
+					width: 100%;
+					position: absolute;
+					bottom: 5%;
+					left: 0;
+					text-align: center;
+				}
+			}
+			&__col2 {
+				align-self: flex-start;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 3.3rem;
+				width: 47%;
+				padding-bottom: 2.5rem;
+				border-bottom: 3px solid #f1023d;
+				div {
+					position: relative;
+					width: 45%;
+					img {
+						width: 100%;
+					}
+					&_img2 {
+					}
+					h3 {
+						width: 100%;
+						position: absolute;
+						bottom: 5%;
+						left: 0;
+						text-align: center;
+						color: #fff;
+					}
+					.mentorsImages__col2_madina {
+						color: #f1023d;
+					}
+				}
+			}
+			&__col3 {
+				width: 23%;
+				position: relative;
+				img {
+					width: 100%;
+				}
+				h3 {
+					width: 100%;
+					position: absolute;
+					bottom: 5%;
+					left: 0;
+					text-align: center;
+					color: #f1023d;
+				}
+			}
+		}
+		.mentorsNumbers {
+			display: flex;
+			justify-content: space-between;
+			width: 70%;
+			margin: 0 auto;
+			text-align: center;
+			&__col {
+				width: 24%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				gap: 1rem;
+				transition: 2s;
+
+				&:hover {
+					transform: perspective(200px) rotateY(360deg);
+				}
+				h3 {
+					font-family: "Allerta Stencil", sans-serif;
+					color: #f1023d;
+					font-weight: 100;
+					font-size: 35px;
+					transition: 2s;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 765px) {
+	.mentorsImages {
+		padding: 3% 7%;
+		h2 {
+			font-family: emoji;
+			font-size: 50px;
+		}
+		.mentorsImages {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+			height: 300px;
+			img {
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
+			&__col1 {
+				position: relative;
+				width: 20%;
+				img {
+					width: 100%;
+				}
+				h3 {
+					width: 100%;
+					position: absolute;
+					bottom: 5%;
+					left: 0;
+					text-align: center;
+				}
+			}
+			&__col2 {
+				align-self: flex-start;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 1rem;
+				width: 46%;
+				padding-bottom: 2.5rem;
+				border-bottom: 3px solid #f1023d;
+				div {
+					position: relative;
+					width: 45%;
+					img {
+						width: 100%;
+					}
+					&_img2 {
+					}
+					h3 {
+						width: 100%;
+						position: absolute;
+						bottom: 5%;
+						left: 0;
+						text-align: center;
+						color: #fff;
+					}
+					.mentorsImages__col2_madina {
+						color: #f1023d;
+					}
+				}
+			}
+			&__col3 {
+				width: 20%;
+				position: relative;
+				img {
+					width: 100%;
+				}
+				h3 {
+					width: 100%;
+					position: absolute;
+					bottom: 5%;
+					left: 0;
+					text-align: center;
+					color: #f1023d;
+				}
+			}
+		}
+		.mentorsNumbers {
+			display: flex;
+			justify-content: space-between;
+			width: 90%;
+			margin: 0 auto;
+			text-align: center;
+			&__col {
+				width: 28%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				gap: 1rem;
+				transition: 2s;
+
+				&:hover {
+					transform: perspective(200px) rotateY(360deg);
+				}
+				h3 {
+					font-family: "Allerta Stencil", sans-serif;
+					color: #f1023d;
+					font-weight: 100;
+					font-size: 30px;
+					transition: 2s;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

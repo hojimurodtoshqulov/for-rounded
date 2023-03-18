@@ -1,0 +1,268 @@
+@import "../../scss/varuables.scss";
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.news {
+	background: #0E0E12;
+	margin-top: 50vh;
+	.nav {
+		&__elements {
+			&-linksDiv {
+				&-ul {
+					&-news {
+						&:hover {
+							border-bottom: 3px solid #ff00;
+						}
+						a {
+							color: #f3023e;
+							span {
+								display: inline-block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.page__title {
+		position: absolute;
+		left: 37%;
+		top: 40vh;
+		overflow: hidden;
+		padding: 1% 0 2% 0;
+		font-family: $font_titles;
+		font-size: 3em;
+		width: 26%;
+		text-align: center;
+		color: $light;
+		font-weight: 500;
+		background: #0E0E12;
+		text-shadow: 0 2px 3px rgba(255, 255, 255, 0.698);
+		box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
+		z-index: 12;
+		border-radius: $br_r_5;
+		text-transform: capitalize;
+	}
+	.carousel {
+		padding: 8% 0 6% 0;
+		.card {
+			&__elements {
+				padding: 0 0 3% 0;
+				transition: 0.5s all;
+				margin: 10% 5% 10% 5%;
+				width: 90%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 0.5rem;
+				text-align: center;
+				border-radius: $br_r_5;
+				overflow: hidden;
+				&:hover {
+					box-shadow: 0 4px 15px rgba(0, 0, 0, 0.555);
+					transform: scale(1.02);
+				}
+				&:hover img {
+					border-radius: 5px 5px 0px 0px;
+				}
+				img {
+					width: 100%;
+					height: 200px;
+					object-fit: cover;
+					border-radius: $br_r_5;
+					transition: 0.5s all;
+					&:hover {
+						transform: scale(1.02);
+					}
+				}
+				h3 {
+					font-family: $font_titles;
+				}
+				p {
+					width: 85%;
+					font-family: $font_texts;
+					line-height: 1.4rem;
+					color: #666;
+					text-align: justify;
+				}
+				span {
+					button {
+						padding: 0% 10%;
+						color: aqua;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $xl) {
+	.news {
+		.page__title {
+			left: 35%;
+			top: 32vh;
+			padding: 1% 0 2% 0;
+			font-size: 2.9em;
+			width: 30%;
+		}
+		.wrapper {
+			.cards {
+				padding: 10% 0;
+				display: flex;
+				justify-content: space-between;
+				align-items: start;
+				flex-wrap: wrap;
+				row-gap: 3rem;
+				.card {
+					width: 31%;
+					gap: 1em;
+					padding: 0 0 3% 0;
+					img {
+						height: 240px;
+					}
+					p {
+						width: 88%;
+					}
+					button {
+						padding: 0% 10%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $lg) {
+	.news {
+		.page__title {
+			left: 31%;
+			top: 34vh;
+			padding: 0% 0 1% 0;
+			font-size: 2.6em;
+			width: 38%;
+		}
+		.wrapper {
+			.cards {
+				padding: 10% 0;
+				display: flex;
+				justify-content: space-between;
+				align-items: start;
+				flex-wrap: wrap;
+				.card {
+					width: 47%;
+					gap: 1em;
+					padding: 0 0 3% 0;
+					img {
+						height: 230px;
+					}
+					p {
+						width: 90%;
+					}
+					button {
+						padding: 0% 10%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $md) {
+	.news {
+		.page__title {
+			left: 28%;
+			top: 35vh;
+			font-size: 2.4em;
+			width: 44%;
+		}
+		.wrapper {
+			.cards {
+				padding: 10% 0;
+				display: flex;
+				justify-content: center;
+				align-items: start;
+				flex-wrap: wrap;
+				.card {
+					width: 80%;
+					gap: 1em;
+					padding: 0 0 3% 0;
+					img {
+						height: 230px;
+					}
+					p {
+						line-height: 1.2rem;
+						width: 95%;
+					}
+					button {
+						padding: 0% 10%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $sm) {
+	.news {
+		.page__title {
+			left: 26%;
+			top: 36vh;
+			font-size: 1.8em;
+			width: 48%;
+		}
+		.wrapper {
+			.cards {
+				.card {
+					width: 95%;
+					gap: 0.8em;
+					padding: 0 0 5% 0;
+					img {
+						height: 220px;
+					}
+					p {
+						width: 95%;
+						text-align: justify;
+						font-size: 0.6rem;
+						line-height: 1rem;
+						color: aqua;
+					}
+					button {
+						padding: 0% 10%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $xs) {
+	.news {
+		.page__title {
+			left: 20%;
+			top: 37vh;
+			font-size: 1.3em;
+			width: 60%;
+			padding: 0 1%;
+		}
+
+		.wrapper {
+			.cards {
+				.card {
+					width: 100%;
+					gap: 0.8em;
+					padding: 0 0 7% 0;
+					img {
+						height: 220px;
+					}
+					p {
+						line-height: 1.2rem;
+						width: 95%;
+					}
+				}
+			}
+		}
+	}
+}

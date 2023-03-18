@@ -1,0 +1,199 @@
+@import "../../scss/varuables.scss";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+::placeholder {
+	color: #ddd;
+}
+
+.submit {
+	margin: 4% 0;
+	padding: 3% 7%;
+	width: $w_100;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4em;
+	color: $light;
+	h2 {
+		font-family: emoji;
+		font-size: 50px;
+	}
+	::placeholder {
+		color: $light;
+	}
+
+	form {
+		height: 70px;
+		width: $w_100;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1em 0;
+		input {
+			height: 100%;
+			background: #202020;
+			padding: 1% 2%;
+			font-size: 1em;
+			border: 2px solid #666;
+			border-radius: 10px;
+			width: 21%;
+		}
+		input:focus {
+			border: none;
+			border-bottom: 2px solid $reddish;
+			outline: none;
+		}
+
+		span {
+			align-self: flex-start;
+			order: 5;
+			width: 21%;
+			button {
+				width: 100%;
+			}
+		}
+	}
+}
+.openSuccess {
+	transition: all 1s ease-in;
+	position: fixed;
+	top: 37%;
+	right: 4%;
+	z-index: 12345;
+	width: 40%;
+	background: $light;
+	color: $dark;
+	border-radius: 15px 15px 0 15px;
+	padding: 3% 5%;
+	text-align: center;
+	.corner {
+		width: 30px;
+		height: 20px;
+		transform: rotate(20deg);
+		background: #fff;
+		border-radius: 0 100% 0 0;
+		position: absolute;
+		bottom: -5%;
+		right: -1%;
+		z-index: -1;
+	}
+}
+.closeSuccess {
+	top: 37%;
+	right: -40%;
+}
+@media (max-width: $xl) {
+	.submit {
+		margin: 0;
+		padding: 3% 7%;
+		width: $w_100;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 4em;
+		color: $light;
+		h2 {
+			font-family: emoji;
+			font-size: 50px;
+		}
+		::placeholder {
+			color: $light;
+		}
+
+		form {
+			height: 70px;
+			width: $w_100;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			gap: 1em 0;
+			input {
+				height: 100%;
+				background: #202020;
+				padding: 1% 2%;
+				font-size: 1em;
+				border: 2px solid #666;
+				border-radius: 10px;
+				width: 21%;
+			}
+			input:focus {
+				border: none;
+				border-bottom: 2px solid $reddish;
+				outline: none;
+			}
+
+			span {
+				align-self: flex-start;
+				order: 5;
+				width: 21%;
+				button {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $md) {
+	.submit {
+		margin: 20% 0;
+		padding: 3% 7%;
+		width: $w_100;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 4em;
+		color: $light;
+		h2 {
+			font-family: emoji;
+			font-size: 50px;
+		}
+		::placeholder {
+			color: $light;
+		}
+
+		form {
+			height: 70px;
+			width: $w_100;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 1em 0;
+			input {
+				height: 100%;
+				background: #202020;
+				padding: 1% 2%;
+				font-size: 1em;
+				border: 2px solid #666;
+				border-radius: 10px;
+				width: 47%;
+			}
+			input:focus {
+				border: none;
+				border-bottom: 2px solid $reddish;
+				outline: none;
+			}
+
+			span {
+				align-self: flex-start;
+				order: 5;
+				width: 47%;
+				button {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

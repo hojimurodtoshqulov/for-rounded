@@ -1,0 +1,198 @@
+@import url("../../scss/varuables.scss");
+@import url("https://fonts.googleapis.com/css2?family=Marko+One&family=Playfair+Display:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marko+One&family=Playfair+Display:wght@600;700;800&family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Marko+One&family=Playfair+Display:wght@600;700;800&family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Marko+One&family=Playfair+Display:wght@600;700;800&family=Rozha+One&family=Yatra+One&display=swap");
+.header {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	&__col1 {
+		width: 60%;
+		height: 100%;
+		background-image: linear-gradient(
+				rgba(0, 0, 0, 0.722),
+				rgba(0, 0, 0, 0.722)
+			),
+			url("../../media/tz_header.jpeg");
+		background-size: cover;
+	}
+	&__col2 {
+		width: 40%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 300px;
+			height: 453px;
+			border-radius: 50%;
+		}
+	}
+	&__elements {
+		width: 58%;
+		position: absolute;
+		top: 40%;
+		left: 20%;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 2rem;
+		h1 {
+			// font-family: "Marko One", serif;
+			// font-family: "Playfair Display", serif;
+			// font-family: "Yatra One", cursive;
+			font-family: "Aclonica", sans-serif;
+			// font-family: "Rozha One", serif;
+			font-weight: 400;
+			font-size: 50px;
+		}
+		p {
+			margin-left: 10%;
+			text-align: center;
+			width: 80%;
+			font-family: "Aclonica", sans-serif;
+			font-size: 20px;
+		}
+		&_buttons {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 2rem;
+			a {
+				display: inline-block;
+				border: 3px solid #f4013d;
+				color: #fff;
+				background: #ff00;
+				padding: 25px 50px;
+				border-radius: 15px;
+				font-family: "Aclonica", sans-serif;
+				&:hover {
+					background: #f4013d;
+					box-shadow: 0 0 20px #f4013d;
+				}
+			}
+		}
+		.img3 {
+			position: absolute;
+			top: -7%;
+			left: 60%;
+		}
+		.img4 {
+			position: absolute;
+			top: 0;
+			left: 5%;
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.header {
+		&__col2 {
+			width: 40%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 250px;
+				height: 370px;
+				border-radius: 50%;
+			}
+		}
+		&__elements {
+			width: 66%;
+			top: 40%;
+			left: 14%;
+			gap: 2rem;
+			h1 {
+				font-family: "Marko One", serif;
+				font-family: "Playfair Display", serif;
+				font-family: "Yatra One", cursive;
+				font-family: "Aclonica", sans-serif;
+				// font-family: "Rozha One", serif;
+				font-weight: 400;
+				font-size: 40px;
+			}
+			p {
+				margin-left: 10%;
+				text-align: center;
+				width: 80%;
+				font-family: "Aclonica", sans-serif;
+				font-size: 17px;
+			}
+			&_buttons {
+				gap: 2rem;
+				a {
+					padding: 20px 40px;
+				}
+			}
+			.img3 {
+				position: absolute;
+				top: -10%;
+				left: 65%;
+			}
+			.img4 {
+				position: absolute;
+				top: 0;
+				left: 6%;
+			}
+		}
+	}
+}
+@media (max-width: 765px) {
+	.header {
+		position: relative;
+		width: 100%;
+		height: 80vh;
+		flex-wrap: wrap;
+		&__col1 {
+			width: 100%;
+			height: 100%;
+		}
+		&__col2 {
+			display: none;
+		}
+		&__elements {
+			width: 90%;
+			position: absolute;
+			top: 40%;
+			left: 5%;
+			gap: 3rem;
+			h1 {
+				font-size: 30px;
+			}
+			p {
+				margin-left: 10%;
+				text-align: center;
+				width: 80%;
+				font-family: "Aclonica", sans-serif;
+				font-size: 15px;
+			}
+			&_buttons {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 1rem;
+				a {
+					padding: 15px 30px;
+				}
+			}
+			.img3 {
+				position: absolute;
+				top: -13%;
+				left: 60%;
+			}
+			.img4 {
+				position: absolute;
+				top: 0;
+				left:5%;
+			}
+		}
+	}
+}

@@ -1,0 +1,206 @@
+@import "../../scss/varuables.scss";
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.nav__links {
+	display: none;
+}
+@media (max-width: $md) {
+	.nav__links {
+		max-width: 400px;
+		width: 80%;
+		height: 100%;
+		position: fixed;
+		top: 0px;
+		right: auto;
+		left: -80%;
+		z-index: 12456;
+		border-radius: $br_r_0;
+		margin-top: 0;
+		background: #25292b;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 2% 5%;
+		overflow: hidden;
+		.nav__logo {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 0.4rem;
+			width: 100%;
+			height: 90px;
+			cursor: pointer;
+			color: $light;
+			&:hover {
+				color: $light;
+			}
+			h5 {
+				font-family: emoji;
+				span {
+					font-family: emoji;
+					font-size: 0.8em;
+				}
+			}
+			&-img {
+				// height: 100%;
+				object-fit: cover;
+			}
+		}
+		&-title {
+			display: block;
+			color: $light;
+			font-family: $font_titles;
+			text-transform: uppercase;
+			font-size: 1.3rem;
+		}
+		&-menu {
+			height: auto;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+			overflow: hidden;
+			a {
+				text-transform: uppercase;
+				display: inline-block;
+				padding: 5% 0;
+				width: $w_100;
+				color: $light;
+				border-bottom: 1px solid #ff0000;
+				transition: 1s;
+				color: $light;
+				font-size: 1.2em;
+				span {
+					padding-right: 0.4rem;
+				}
+				.fa-solid {
+					display: inline-block;
+					margin-right: 0.5rem;
+				}
+				&:hover {
+					border-bottom: 1px solid $light;
+					color: $denger;
+				}
+			}
+		}
+		&-mobileElements {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: 1rem;
+			&-media {
+				display: flex;
+				gap: 0.5em;
+				font-size: 1.4rem;
+				color: white;
+			}
+			.nav__elements-callsDiv-calls {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 0.3rem;
+				color: $light;
+				&-numbers {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: flex-start;
+					font-size: 1.3rem;
+				}
+			}
+			.nav__otherElements {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: space-between;
+				gap: 1rem;
+				&-mail {
+					color: $light;
+				}
+				&__language {
+					&-img {
+						margin-right: 0.5rem;
+						width: 20px;
+						height: 20px;
+						box-shadow: 0 4px 6px rgba(0, 0, 0, 0.503);
+						border: none;
+						border-radius: 50%;
+						cursor: pointer;
+					}
+					.eng {
+						background-image: url("https://vectorflags.s3.amazonaws.com/flags/uk-circle-01.png");
+						background-size: cover;
+					}
+					.rus {
+						background-image: url("../../media/russianFlag.png");
+						background-size: cover;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: $xs) {
+	.nav__links {
+		.nav__logo {
+			width: 60%;
+		}
+		h2 {
+			font-size: 1.1rem;
+		}
+		&-menu {
+			li {
+				padding: 5% 0;
+				width: $w_100;
+				border-bottom: 1px solid $denger;
+				transition: 1s;
+				font-size: 1.1em;
+				&:hover {
+					border-bottom: 1px solid $light;
+				}
+			}
+		}
+		&-mobileElements {
+			&-media {
+				font-size: 1.2rem;
+			}
+			.nav__elements-callsDiv-calls {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				color: $light;
+				&-numbers {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: flex-start;
+					font-size: 1.2rem;
+				}
+			}
+			.nav__otherElements {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: space-between;
+				gap: 1rem;
+				&-mail {
+					color: $light;
+				}
+				&__language {
+					&-img {
+						width: 20px;
+						height: 13px;
+					}
+				}
+			}
+		}
+	}
+}
