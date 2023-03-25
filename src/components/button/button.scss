@@ -6,15 +6,21 @@
 }
 .button {
 	display: inline-block;
-	border: 3px solid #f4013d;
+	border: none;
 	color: #fff;
-	background: #ff00;
+	background: linear-gradient(to right, #ff003f, #fa3463, #fa3463);
 	padding: 25px 50px;
 	border-radius: 15px;
 	font-family: "Aclonica", sans-serif;
+	cursor: pointer;
+	border: 3px solid #ff00;
+	transition: 1s;
 	&:hover {
-		background: #f4013d;
-		box-shadow: 0 0 20px #f4013d;
+		// background: linear-gradient(to right, #ff003f, #ff003f, #ff003f);
+		// transform: scale(1.02);
+		background: #ff00;
+		border: 3px solid #f4013d;
+		// box-shadow: 0 0 10px #f4013ec6;
 	}
 }
 

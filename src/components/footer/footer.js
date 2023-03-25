@@ -30,84 +30,114 @@ const Footer = () => {
 				<p>{t("stages1Description")}</p>
 			</div>
 			<div className="footer__col col2" data-aos="fade-right">
-				<Link to="/" data-aos="flip-up">
-					<span>
-						<FaChevronRight />
-					</span>
-					About Us
-				</Link>
-				<Link to="/" data-aos="flip-up">
-					<span>
-						<FaChevronRight />
-					</span>
-					Graduation
-				</Link>
-				<Link to="/" data-aos="flip-up">
-					<span>
-						<FaChevronRight />
-					</span>
-					Scholarship
-				</Link>
-				<Link to="/" data-aos="flip-up">
-					<span>
-						<FaChevronRight />
-					</span>
-					Admissions
-				</Link>
-				<Link to="/" data-aos="flip-up">
-					<span>
-						<FaChevronRight />
-					</span>
-					International
-				</Link>
-				<Link to="/" data-aos="flip-up">
-					<span>
-						<FaChevronRight />
-					</span>
-					Events
-				</Link>
+				<div className="col2__div">
+					<Link to="/" data-aos="flip-up">
+						<span>
+							<FaChevronRight />
+						</span>
+						About Us
+					</Link>
+				</div>
+				<div className="col2__div">
+					<Link to="/" data-aos="flip-up">
+						<span>
+							<FaChevronRight />
+						</span>
+						Graduation
+					</Link>
+				</div>
+				<div className="col2__div">
+					<Link to="/" data-aos="flip-up">
+						<span>
+							<FaChevronRight />
+						</span>
+						Scholarship
+					</Link>
+				</div>
+				<div className="col2__div">
+					<Link to="/" data-aos="flip-up">
+						<span>
+							<FaChevronRight />
+						</span>
+						Admissions
+					</Link>
+				</div>
+				<div className="col2__div">
+					<Link to="/" data-aos="flip-up">
+						<span>
+							<FaChevronRight />
+						</span>
+						International
+					</Link>
+				</div>
+				<div className="col2__div">
+					<Link to="/" data-aos="flip-up">
+						<span>
+							<FaChevronRight />
+						</span>
+						Events
+					</Link>
+				</div>
 			</div>
 			<div className="footer__col col2" data-aos="fade-left">
-				<Link to="/" data-aos="flip-up">
-					<span>
-						<FaChevronRight />
-					</span>
-					Language
-				</Link>
-				<Link to="/" data-aos="flip-up">
-					<span>
-						<FaChevronRight />
-					</span>
-					WordPress
-				</Link>
-				<Link to="/" data-aos="flip-up">
-					<span>
-						<FaChevronRight />
-					</span>
-					Privacy
-				</Link>
-				<Link to="/" data-aos="flip-up">
-					<span>
-						<FaChevronRight />
-					</span>
-					FAQs
-				</Link>
-				<Link to="/" data-aos="flip-up">
-					<span>
-						<FaChevronRight />
-					</span>
-					Support
-				</Link>
+				<div className="col2__div">
+					<Link to="/" data-aos="flip-up">
+						<span>
+							<FaChevronRight />
+						</span>
+						Language
+					</Link>
+				</div>
+				<div className="col2__div">
+					<Link to="/" data-aos="flip-up">
+						<span>
+							<FaChevronRight />
+						</span>
+						WordPress
+					</Link>
+				</div>
+				<div className="col2__div">
+					<Link to="/" data-aos="flip-up">
+						<span>
+							<FaChevronRight />
+						</span>
+						Privacy
+					</Link>
+				</div>
+				<div className="col2__div">
+					<Link to="/" data-aos="flip-up">
+						<span>
+							<FaChevronRight />
+						</span>
+						FAQs
+					</Link>
+				</div>
+				<div className="col2__div">
+					<Link to="/" data-aos="flip-up">
+						<span>
+							<FaChevronRight />
+						</span>
+						Support
+					</Link>
+				</div>
 			</div>
 			<div className="footer__col col4" data-aos="fade-right">
 				<p>Звонок по Узбекистану бесплатный</p>
 				<a href="tel:+998 (99) 99-99-99">+998 (99) 99-99-99</a>
 				<Button buttonTitle={"Перезвоните нам"} />
 				<div className="col4_img">
-					<img src={img1} alt="" />
-					<img src={img2} alt="" />
-					<img src={img3} alt="" />
-					<img src={img4} alt="" />
+					<Link to="/">
+						<img src={img1} alt="" />
+					</Link>
+					<Link to="/">
+						<img src={img2} alt="" />
+					</Link>
+					<Link to="/">
+						<img src={img3} alt="" />
+					</Link>
+					<Link to="/">
+						<img src={img4} alt="" />
+					</Link>
 				</div>
 			</div>
 		</footer>

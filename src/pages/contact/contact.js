@@ -5,7 +5,7 @@ import "../../scss/main.scss";
 import Footer from "../../components/footer/footer";
 import ShowBg from "../../components/showBg/showBg";
 import bgImg from "../../media/contact-us.jpg";
-import Stages from "../../components/stages/stages";
+// import Stages from "../../components/stages/stages";
 import Submit from "../../components/submitApp/submit";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -100,7 +100,7 @@ const Contact = () => {
 							data-aos="fade-left"
 							data-aos-duration="1000"
 						>
-							<Stages stagesData={StagesDataCont} />
+							{/* <Stages stagesData={StagesDataCont} /> */}
 						</div>
 						<Categories />
 					</div>

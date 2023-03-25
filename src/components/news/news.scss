@@ -22,13 +22,26 @@
 			position: relative;
 			&-img1 {
 				width: 100%;
+				position: relative;
+				z-index: 1;
+				border-radius: 20px;
+				&:hover {
+					// z-index: 3;
+					transform: scale(1.05);
+					box-shadow: 3px 5px 20px #000;
+				}
 			}
 			&-img2 {
 				width: 90%;
-
 				position: absolute;
 				top: 50%;
 				right: -20%;
+				z-index: 2;
+				transform: translateZ(30px);
+				&:hover {
+					// z-index: 3;
+					transform: scale(1.05);
+				}
 			}
 			&-p {
 				font-size: 23px;
@@ -94,10 +107,10 @@
 				position: relative;
 				&-img1 {
 					width: 100%;
+					position: relative;
 				}
 				&-img2 {
 					width: 80%;
-
 					position: absolute;
 					top: 50%;
 					right: 0%;

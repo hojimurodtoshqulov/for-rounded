@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { WiStars } from "react-icons/wi";
 import { FiChevronDown } from "react-icons/fi";
-import roLogo from "../../media/russianFlag.png";
+import ruLogo from "../../media/russianFlag.png";
 const Nav = ({ onClick }) => {
 	const [navSize, setnavSize] = useState("100px");
 	const [navColorBg, setnavColorBg] = useState("transparent");
@@ -15,7 +15,7 @@ const Nav = ({ onClick }) => {
 	const [navContainerBR, setNavContainerBR] = useState("2px solid #fff");
 	const listenScrollEvent = () => {
 		window.scrollY > 150
-			? setnavColorBg("#181a1bbd")
+			? setnavColorBg("#0e0e12f0")
 			: setnavColorBg("transparent");
 		window.scrollY > 150 ? setnavSize("80px") : setnavSize("110px");
 		window.scrollY > 150 ? setNavLogoFSZ("9px") : setNavLogoFSZ("12px");
@@ -33,7 +33,7 @@ const Nav = ({ onClick }) => {
 	}, []);
 	const [langCheck, setLangCheck] = useState(1);
 	const langBtn = [
-		{ btntitle: "Rus", img: roLogo, id: 1 },
+		{ btntitle: "Rus", img: ruLogo, id: 1 },
 		{
 			btntitle: "Eng",
 			img: "https://vectorflags.s3.amazonaws.com/flags/uk-circle-01.png",
@@ -43,8 +43,10 @@ const Nav = ({ onClick }) => {
 	// const ref = useRef();
 	const checkLangImg = (e) => {
 		if (e.target.value === "en") {
-			setLangCheck(2)
-		}else{setLangCheck(1)}
+			setLangCheck(2);
+		} else {
+			setLangCheck(1);
+		}
 	};
 	return (
 		<Suspense fallback="loading">
@@ -77,14 +79,6 @@ const Nav = ({ onClick }) => {
 							}}
 						>
 							<ul className="nav__elements-linksDiv-ul">
-								<li className="nav__elements-linksDiv-ul-home">
-									<Link to="/">
-										{t("home")}
-										<span>
-											<WiStars />
-										</span>
-									</Link>
-								</li>
 								<li className="nav__elements-linksDiv-ul-company">
 									<Link to="/company">
 										{t("company")}{" "}
@@ -92,6 +86,7 @@ const Nav = ({ onClick }) => {
 											<WiStars />
 										</span>
 									</Link>
+									<div className="line_bottom"></div>
 								</li>
 								<li className="nav__elements-linksDiv-ul-services">
 									<Link to="/services">
@@ -100,6 +95,7 @@ const Nav = ({ onClick }) => {
 											<WiStars />
 										</span>
 									</Link>
+									<div className="line_bottom"></div>
 								</li>
 								<li className="nav__elements-linksDiv-ul-news">
 									<Link to="/news">
@@ -108,6 +104,7 @@ const Nav = ({ onClick }) => {
 											<WiStars />
 										</span>
 									</Link>
+									<div className="line_bottom"></div>
 								</li>
 								<li className="nav__elements-linksDiv-ul-mentors">
 									<Link to="/mentors">
@@ -116,9 +113,9 @@ const Nav = ({ onClick }) => {
 											<WiStars />
 										</span>
 									</Link>
+									<div className="line_bottom"></div>
 								</li>
 								{console.log(langBtn)}
-
 								<div className="lang">
 									{langBtn?.map((item, index) =>
 										item.id === langCheck ? (
@@ -158,6 +155,7 @@ const Nav = ({ onClick }) => {
 											<WiStars />
 										</span>
 									</Link>
+									<div className="line_bottom"></div>
 								</li>
 							</ul>
 						</div>

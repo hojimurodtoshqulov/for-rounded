@@ -32,9 +32,9 @@ const Categories = () => {
 		},
 	];
 	return (
-		<div className={scss.categories} data-aos="fade-up">
+		<div className={scss.categories} data-aos="fade-up" data-aos-duration="1000">
 			{categData?.map((item, index) => (
-				<Link to={item.link} key={index} data-aos={item.aos} data-aos-duration="3000">
+				<Link to={item.link} key={index} data-aos={item.aos} data-aos-duration="1000">
 					<img src={item.img} alt="img1" />
 					<p>{item.description}</p>
 				</Link>

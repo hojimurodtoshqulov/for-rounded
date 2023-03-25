@@ -9,7 +9,7 @@
 }
 .info {
 	margin: 0;
-	padding: 5% 0;
+	padding: 150px 0;
 	background: #0e0e12;
 	.wrapper {
 		padding: 0 2%;
@@ -26,7 +26,9 @@
 				display: none;
 			}
 			.info-img-div {
-				padding-top: 5%;
+				
+
+				// padding-top: 5%;
 				width: $w_50;
 				height: 100%;
 				img {
@@ -40,24 +42,28 @@
 				}
 			}
 			.info-titles-div {
-				padding-top: 5%;
+				
+
+				// padding-top: 15%;
 				width: 42%;
 				display: flex;
-				flex-wrap: wrap;
-				gap: 2em;
+				flex-direction: column;
+				gap: 30px;
 				align-items: flex-start;
-				justify-content: space-between;
+				justify-content: flex-start;
 				text-align: start;
 				h2 {
 					font-size: 50px;
-					font-family: $font_titles;
+					font-family: emoji;
+					
 				}
 				p {
 					font-size: 20px;
 					font-family: $font_titles;
 					font-weight: 500;
 					color: #fff;
-					line-height: 28px;
+					line-height: 38px;
+					
 				}
 				button {
 					padding: 1% 15%;

@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Marko+One&family=Playfair+Display:wght@600;700;800&family=Yatra+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Marko+One&family=Playfair+Display:wght@600;700;800&family=Yatra+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Marko+One&family=Playfair+Display:wght@600;700;800&family=Rozha+One&family=Yatra+One&display=swap");
+
 .header {
 	position: relative;
 	width: 100%;
@@ -64,20 +65,45 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			gap: 2rem;
+			gap: 20px;
 			a {
 				display: inline-block;
 				border: 3px solid #f4013d;
 				color: #fff;
 				background: #ff00;
-				padding: 25px 50px;
+				padding: 21.5px 50px;
+				padding: 30px 60px;
+
 				border-radius: 15px;
 				font-family: "Aclonica", sans-serif;
+				font-size: 22px;
+transition: 1s;
 				&:hover {
-					background: #f4013d;
-					box-shadow: 0 0 20px #f4013d;
+					// transform: scale(1.02);
+					background: linear-gradient(to right, #ff003f, #fa3463, #fa3463);
+					border: 3px solid #ff00;
 				}
 			}
+			button {
+				padding: 30px 60px;
+				font-size: 22px;
+			}
+			// a {
+			// 	display: inline-block;
+			// 	border: none;
+			// 	color: #fff;
+			// 	background: linear-gradient(to right, #ff003f, #fa3463, #fa3463);
+			// 	padding: 25px 50px;
+			// 	border-radius: 15px;
+			// 	font-family: "Aclonica", sans-serif;
+			// 	cursor: pointer;
+			// 	&:hover {
+			// 		// background: linear-gradient(to right, #ff003f, #ff003f, #ff003f);
+			// 		transform: scale(1.02);
+			// 		// background: #f4013d;
+			// 		// box-shadow: 0 0 10px #f4013ec6;
+			// 	}
+			// }
 		}
 		.img3 {
 			position: absolute;
@@ -191,7 +217,7 @@
 			.img4 {
 				position: absolute;
 				top: 0;
-				left:5%;
+				left: 5%;
 			}
 		}
 	}

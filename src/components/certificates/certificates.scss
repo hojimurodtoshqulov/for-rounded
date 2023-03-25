@@ -15,10 +15,12 @@
 		height: 500px;
 		img {
 			&:hover {
-				transform: scale(1.05);
+				transform: scale(1.1);
 			}
 		}
 		&__col1 {
+			overflow: hidden;
+			border-radius: 12px;
 			position: relative;
 			width: 28%;
 			img {
@@ -42,6 +44,8 @@
 			padding-bottom: 2.5rem;
 			border-bottom: 3px solid #f1023d;
 			div {
+				overflow: hidden;
+				border-radius: 12px;
 				position: relative;
 				width: 100%;
 				img {
@@ -63,6 +67,8 @@
 			}
 		}
 		&__col3 {
+			overflow: hidden;
+			border-radius: 12px;
 			width: 28%;
 			position: relative;
 			img {
@@ -78,7 +84,6 @@
 			}
 		}
 	}
-
 }
 @media (max-width: 1200px) {
 	.certificatesImages {
@@ -156,7 +161,6 @@
 				}
 			}
 		}
-
 	}
 }
 @media (max-width: 765px) {

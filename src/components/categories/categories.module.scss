@@ -15,12 +15,17 @@
 		justify-content: center;
 		align-items: center;
 		gap: 1rem;
+		&:hover {
+			img {
+				transform: perspective(200px) rotateY(-180deg);
+			}
+		}
 		img {
 			border-radius: 50%;
 			transition: 1s;
-			&:hover {
-				transform: perspective(200px) rotateY(-180deg);
-			}
+			// &:hover {
+			// 	transform: perspective(200px) rotateY(-180deg);
+			// }
 		}
 		p {
 			font-size: 20px;
@@ -57,9 +62,9 @@
 			width: 24%;
 			img {
 				width: 80%;
-			&:hover {
-				transform: perspective(100px) rotateY(-180deg);
-			}
+				&:hover {
+					transform: perspective(100px) rotateY(-180deg);
+				}
 			}
 			p {
 				font-size: 10px;

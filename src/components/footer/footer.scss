@@ -25,14 +25,24 @@ footer {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		gap: 1rem;
-		a {
-			transition: 1s;
+		gap: 0rem;
+		&__div {
+			height: 2rem;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			transition: 1s !important;
 			&:hover {
 				transform: perspective(100px) rotateX(360deg);
+				a {
+					color: #f4013d;
+				}
 			}
-			span {
-				color: #f4013d;
+			a {
+				display: inline-block;
+				span {
+					color: #f4013d;
+				}
 			}
 		}
 	}
@@ -42,6 +52,9 @@ footer {
 		align-items: center;
 		text-align: center;
 		gap: 1rem;
+		button {
+			padding: 15px 30px;
+		}
 		a {
 			display: block;
 		}
@@ -50,6 +63,12 @@ footer {
 			align-items: center;
 			justify-content: space-between;
 			gap: 0.7rem;
+			a {
+				transition: 1s;
+				&:hover {
+					transform: perspective(200px) rotateY(180deg);
+				}
+			}
 		}
 	}
 }

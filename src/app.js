@@ -10,7 +10,7 @@ import { Mentors } from "./pages/mentors/mentors";
 
 const App = () => {
 	useEffect(() => {
-		Aos.init({ duration: 2000, mirror: true });
+		Aos.init({ duration: 1000, mirror: true });
 	}, []);
 	return (
 		<>
