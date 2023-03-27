@@ -16,6 +16,7 @@ const Header = () => {
 					data-aos-easing="ease-out-cubic"
 					data-aos-duration="2000"
 				/>
+				<div></div>
 			</div>
 			<div
 				className={scss.header__elements}
@@ -34,7 +35,11 @@ const Header = () => {
 					sodales bibendum etiam viverra mollis amet. Urna sed molestie auctor
 					nisi.
 				</p>
-				<div className={scss.header__elements_buttons} data-aos="flip-up" data-aos-delay="1000">
+				<div
+					className={scss.header__elements_buttons}
+					data-aos="flip-up"
+					data-aos-delay="1000"
+				>
 					<Button buttonTitle={"Lorem, ipsum dolor"} />
 					<Link to="/news">Lorem, ipsum dolor</Link>
 				</div>

@@ -9,7 +9,7 @@
 	color: inherit;
 }
 .main {
-	background: #0e0e12;
+	background: #000;
 	width: 100%;
 	overflow: hidden;
 	input[type="checkbox"] {
@@ -39,7 +39,7 @@
 	}
 
 	.infoDiv {
-		background: #0e0e12;
+		background: #000;
 		padding: 0 0 10% 0;
 		position: relative;
 		.light {
@@ -67,22 +67,9 @@
 		}
 	}
 }
-.courses {
-	background: #0e0e12;
-	position: relative;
-	.light {
-		bottom: 30%;
-	}
-	&_fingerprintL {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 400px;
-	}
-}
-
 .categories {
 	position: relative;
+	z-index: 123;
 	&__fingerprintR {
 		height: 400px;
 		position: absolute;
@@ -96,8 +83,23 @@
 	@media (max-width: 765px) {
 	}
 }
+.courses {
+	background: #000;
+	position: relative;
+	.light {
+		bottom: 30%;
+	}
+	&_fingerprintL {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 400px;
+	}
+}
 .mentorsDiv {
 	position: relative;
+	margin: 0 !important;
+	padding: 0 !important;
 	&__fingerprintR {
 		height: 400px;
 		position: absolute;
@@ -112,7 +114,7 @@
 	}
 }
 .Certificates {
-	background: #0e0e12;
+	background: #000;
 	position: relative;
 	.light {
 		bottom: 30%;
@@ -144,10 +146,7 @@
 		}
 	}
 }
-.success {
-	position: relative;
-	z-index: 99999;
-}
+
 @media (max-width: $xl) {
 	.stages-elements {
 		padding: 10% 0;
@@ -193,7 +192,7 @@
 		}
 	}
 	.courses {
-		background: #0e0e12;
+		background: #000;
 		position: relative;
 		.light {
 			bottom: 0%;

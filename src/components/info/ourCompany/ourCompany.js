@@ -35,6 +35,7 @@ const OurCompany = ({ OurCompanyData }) => {
 									data-aos-duration="1000"
 								>
 									<img src={item.image} alt="company" />
+									<div>{item.title}</div>
 								</div>
 							</div>
 						);

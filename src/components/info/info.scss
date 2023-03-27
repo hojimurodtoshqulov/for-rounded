@@ -9,8 +9,8 @@
 }
 .info {
 	margin: 0;
-	padding: 150px 0;
-	background: #0e0e12;
+	padding: 150px 0 50px 0;
+	background: #000;
 	.wrapper {
 		padding: 0 2%;
 		display: flex;
@@ -26,9 +26,6 @@
 				display: none;
 			}
 			.info-img-div {
-				
-
-				// padding-top: 5%;
 				width: $w_50;
 				height: 100%;
 				img {
@@ -40,10 +37,22 @@
 						transform: scale(1.05);
 					}
 				}
+				div {
+					height: 0px;
+					box-shadow: 0 0 30px 40px #000;
+					color: #000;
+					text-shadow: 0 0 5px #ff023d;
+					font-size: 80px;
+					position: absolute;
+					bottom: 0%;
+					right: -8%;
+					width: 70%;
+					text-align: center;
+					// background: rgba(0, 0, 0, 0.886);
+					// border: 1px solid red;
+				}
 			}
 			.info-titles-div {
-				
-
 				// padding-top: 15%;
 				width: 42%;
 				display: flex;
@@ -55,7 +64,6 @@
 				h2 {
 					font-size: 50px;
 					font-family: emoji;
-					
 				}
 				p {
 					font-size: 20px;
@@ -63,7 +71,6 @@
 					font-weight: 500;
 					color: #fff;
 					line-height: 38px;
-					
 				}
 				button {
 					padding: 1% 15%;

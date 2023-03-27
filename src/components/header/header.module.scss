@@ -1,4 +1,4 @@
-@import url("../../scss/varuables.scss");
+@import "../../scss/varuables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Marko+One&family=Playfair+Display:wght@600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Marko+One&family=Playfair+Display:wght@600;700;800&family=Yatra+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Marko+One&family=Playfair+Display:wght@600;700;800&family=Yatra+One&display=swap");
@@ -12,6 +12,7 @@
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: nowrap;
+	background: #000;
 	&__col1 {
 		width: 60%;
 		height: 100%;
@@ -32,6 +33,14 @@
 			width: 300px;
 			height: 453px;
 			border-radius: 50%;
+		}
+		div {
+			position: absolute;
+			left: 25%;
+			bottom: 22%;
+			width: 50%;
+			height: 0px;
+			box-shadow: 0px 0px 35px 80px $dark;
 		}
 	}
 	&__elements {
@@ -73,14 +82,15 @@
 				background: #ff00;
 				padding: 21.5px 50px;
 				padding: 30px 60px;
-
+				box-shadow: 0 0 15px #f0063da0;
 				border-radius: 15px;
 				font-family: "Aclonica", sans-serif;
 				font-size: 22px;
-transition: 1s;
+				transition: 1s;
 				&:hover {
 					// transform: scale(1.02);
 					background: linear-gradient(to right, #ff003f, #fa3463, #fa3463);
+					background: #f4013d;
 					border: 3px solid #ff00;
 				}
 			}
@@ -88,22 +98,6 @@ transition: 1s;
 				padding: 30px 60px;
 				font-size: 22px;
 			}
-			// a {
-			// 	display: inline-block;
-			// 	border: none;
-			// 	color: #fff;
-			// 	background: linear-gradient(to right, #ff003f, #fa3463, #fa3463);
-			// 	padding: 25px 50px;
-			// 	border-radius: 15px;
-			// 	font-family: "Aclonica", sans-serif;
-			// 	cursor: pointer;
-			// 	&:hover {
-			// 		// background: linear-gradient(to right, #ff003f, #ff003f, #ff003f);
-			// 		transform: scale(1.02);
-			// 		// background: #f4013d;
-			// 		// box-shadow: 0 0 10px #f4013ec6;
-			// 	}
-			// }
 		}
 		.img3 {
 			position: absolute;

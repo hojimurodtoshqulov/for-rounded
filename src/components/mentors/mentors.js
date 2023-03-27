@@ -8,7 +8,7 @@ import img4 from "../../media/tz_andrey.png";
 const Mentors = () => {
 	const { t } = useTranslation();
 	return (
-		<div className="mentorsImages" data-aos="fade-up">
+		<div className="mentors" data-aos="fade-up">
 			<h2>{t("mentors")}</h2>
 			<div className="mentorsImages">
 				<div className="mentorsImages__col1" data-aos="fade-right">
@@ -24,7 +24,7 @@ const Mentors = () => {
 						</div>
 						<h3 className=" mentorsImages__col2_madina">Madina</h3>
 					</div>
-					<div>
+					<div >
 						<div className="mentorsImages__col2_imgDiv">
 							<img className="mentorsImages__col2_img2" src={img3} alt="" />
 						</div>
