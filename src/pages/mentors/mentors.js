@@ -23,7 +23,7 @@ const Mentors = () => {
 				<NavbarLinks />
 				<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
 				<ShowBg bgImage={bgImg} />
-				<h2 className="page__title">{t("mentors")}</h2>
+				{/* <h2 className="page__title">{t("mentors")}</h2> */}
 				<div className="wrapper">
 					<Mentors1 />
 					<div>

@@ -31,7 +31,7 @@ const Footer = () => {
 			</div>
 			<div className="footer__col col2" data-aos="fade-right">
 				<div className="col2__div">
-					<Link to="/" data-aos="flip-up">
+					<Link to="/" >
 						<span>
 							<FaChevronRight />
 						</span>
@@ -39,7 +39,7 @@ const Footer = () => {
 					</Link>
 				</div>
 				<div className="col2__div">
-					<Link to="/" data-aos="flip-up">
+					<Link to="/" >
 						<span>
 							<FaChevronRight />
 						</span>
@@ -47,7 +47,7 @@ const Footer = () => {
 					</Link>
 				</div>
 				<div className="col2__div">
-					<Link to="/" data-aos="flip-up">
+					<Link to="/" >
 						<span>
 							<FaChevronRight />
 						</span>
@@ -55,7 +55,7 @@ const Footer = () => {
 					</Link>
 				</div>
 				<div className="col2__div">
-					<Link to="/" data-aos="flip-up">
+					<Link to="/" >
 						<span>
 							<FaChevronRight />
 						</span>
@@ -63,7 +63,7 @@ const Footer = () => {
 					</Link>
 				</div>
 				<div className="col2__div">
-					<Link to="/" data-aos="flip-up">
+					<Link to="/" >
 						<span>
 							<FaChevronRight />
 						</span>
@@ -71,7 +71,7 @@ const Footer = () => {
 					</Link>
 				</div>
 				<div className="col2__div">
-					<Link to="/" data-aos="flip-up">
+					<Link to="/" >
 						<span>
 							<FaChevronRight />
 						</span>
@@ -81,7 +81,7 @@ const Footer = () => {
 			</div>
 			<div className="footer__col col2" data-aos="fade-left">
 				<div className="col2__div">
-					<Link to="/" data-aos="flip-up">
+					<Link to="/" >
 						<span>
 							<FaChevronRight />
 						</span>
@@ -89,7 +89,7 @@ const Footer = () => {
 					</Link>
 				</div>
 				<div className="col2__div">
-					<Link to="/" data-aos="flip-up">
+					<Link to="/" >
 						<span>
 							<FaChevronRight />
 						</span>
@@ -97,7 +97,7 @@ const Footer = () => {
 					</Link>
 				</div>
 				<div className="col2__div">
-					<Link to="/" data-aos="flip-up">
+					<Link to="/" >
 						<span>
 							<FaChevronRight />
 						</span>
@@ -105,7 +105,7 @@ const Footer = () => {
 					</Link>
 				</div>
 				<div className="col2__div">
-					<Link to="/" data-aos="flip-up">
+					<Link to="/" >
 						<span>
 							<FaChevronRight />
 						</span>
@@ -113,7 +113,7 @@ const Footer = () => {
 					</Link>
 				</div>
 				<div className="col2__div">
-					<Link to="/" data-aos="flip-up">
+					<Link to="/" >
 						<span>
 							<FaChevronRight />
 						</span>
