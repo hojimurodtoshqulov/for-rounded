@@ -48,6 +48,9 @@ const Nav = ({ onClick }) => {
 			setLangCheck(1);
 		}
 	};
+	const scrollToTop = () => {
+		window.scrollTo(0, 0);
+	};
 	return (
 		<Suspense fallback="loading">
 			<nav
@@ -79,7 +82,7 @@ const Nav = ({ onClick }) => {
 							}}
 						>
 							<ul className="nav__elements-linksDiv-ul">
-								<li className="nav__elements-linksDiv-ul-company">
+								<li onClick={scrollToTop} className="nav__elements-linksDiv-ul-company">
 									<Link to="/company">
 										{t("company")}{" "}
 										<span>
@@ -88,7 +91,7 @@ const Nav = ({ onClick }) => {
 									</Link>
 									<div className="line_bottom"></div>
 								</li>
-								<li className="nav__elements-linksDiv-ul-services">
+								<li onClick={scrollToTop} className="nav__elements-linksDiv-ul-services">
 									<Link to="/services">
 										{t("service")}{" "}
 										<span>
@@ -97,7 +100,7 @@ const Nav = ({ onClick }) => {
 									</Link>
 									<div className="line_bottom"></div>
 								</li>
-								<li className="nav__elements-linksDiv-ul-news">
+								<li onClick={scrollToTop} className="nav__elements-linksDiv-ul-news">
 									<Link to="/news">
 										{t("news")}{" "}
 										<span>
@@ -106,7 +109,7 @@ const Nav = ({ onClick }) => {
 									</Link>
 									<div className="line_bottom"></div>
 								</li>
-								<li className="nav__elements-linksDiv-ul-mentors">
+								<li onClick={scrollToTop} className="nav__elements-linksDiv-ul-mentors">
 									<Link to="/mentors">
 										{t("mentors")}
 										<span>
@@ -148,7 +151,7 @@ const Nav = ({ onClick }) => {
 										</span>
 									</div>
 								</div>
-								<li className="nav__elements-linksDiv-ul-contact">
+								<li onClick={scrollToTop} className="nav__elements-linksDiv-ul-contact">
 									<Link to="/contact">
 										{t("contact")}{" "}
 										<span>

@@ -17,7 +17,7 @@ const Mentors = () => {
 	};
 	return (
 		<Suspense fallback="loading">
-			<div className="main mentors">
+			<div className="main mentors mentorsss">
 				<Nav onClick={(e) => handleClick(e)} />
 				<input type="checkbox" id="navLinks__menu" />
 				<NavbarLinks />
