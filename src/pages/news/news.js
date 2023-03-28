@@ -27,7 +27,7 @@ const News = () => {
 				<ShowBg bgImage={bgImg} title={"News"} />
 				<h2 className="page__title">{t("news")}</h2>
 				<div
-					className="news wrapper"
+					className="newses wrapper"
 					data-aos="zoom-in-up"
 					data-aos-duration="1000"
 				>
