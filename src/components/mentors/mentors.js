@@ -8,7 +8,7 @@ import img4 from "../../media/tz_andrey.png";
 const Mentors = () => {
 	const { t } = useTranslation();
 	return (
-		<div className="mentors" data-aos="fade-up">
+		<div className="mentorsComponent" data-aos="fade-up">
 			<h2>{t("mentors")}</h2>
 			<div className="mentorsImages">
 				<div className="mentorsImages__col1" data-aos="fade-right">

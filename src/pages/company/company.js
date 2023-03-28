@@ -9,7 +9,8 @@ import bgImg from "../../media/tz_header.jpeg";
 import OurCompany from "../../components/info/ourCompany/ourCompany";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
-import img1 from "../../media/tz_us.png";
+import us from "../../media/tz_us.png";
+// import img1 from "../../media/tz_us.png";
 import { Axios } from "axios";
 import Categories from "../../components/categories/categories";
 const Company = () => {
@@ -26,10 +27,12 @@ const Company = () => {
 	const handleClick = (e) => {
 		i18next.changeLanguage(e.target.value);
 	};
-	const OurCompanyData2 = [
+	const OurCompanyData = [
 		{
-			image: img1,
-			description: t("aboutCompanyDescription1"),
+			image: us,
+			title: t("infoCompany"),
+			description: t("infoCompanyDescription"),
+			buttonTitle: t("infoBtn"),
 		},
 	];
 
@@ -41,9 +44,9 @@ const Company = () => {
 				<NavbarLinks />
 				<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
 				<ShowBg bgImage={bgImg} title={"Our company"} />
-				{/* <h2 className="page__title">{t("company")}</h2> */}
+				<h2 className="page__title">{t("company")}</h2>
 				<div className="infoDiv">
-					<OurCompany OurCompanyData={OurCompanyData2} />
+					<OurCompany OurCompanyData={OurCompanyData} />
 					<div>
 						<Categories />
 					</div>

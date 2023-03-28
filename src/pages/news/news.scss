@@ -4,9 +4,13 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+.newsDiv {
+	margin-bottom: 10%;
+}
 .news {
 	background: #000;
-	margin-top: 50vh;
+	padding: 2% 0 5% 0;
+	// margin-top: 50vh;
 	.nav {
 		&__elements {
 			&-linksDiv {
@@ -30,71 +34,19 @@
 		left: 37%;
 		top: 40vh;
 		overflow: hidden;
-		padding: 1% 0 2% 0;
+		padding: 2% 0 2% 0;
 		font-family: $font_titles;
 		font-size: 3em;
 		width: 26%;
 		text-align: center;
-		color: $light;
+		color: #e80023;
 		font-weight: 500;
 		background: #000;
-		text-shadow: 0 2px 3px rgba(255, 255, 255, 0.698);
-		box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
+		text-shadow: 0 2px 3px #af001a;
+		// box-shadow: 0 3px 10px rgba(241, 74, 74, 0.281);
 		z-index: 12;
 		border-radius: $br_r_5;
 		text-transform: capitalize;
-	}
-	.carousel {
-		padding: 8% 0 6% 0;
-		.card {
-			&__elements {
-				padding: 0 0 3% 0;
-				transition: 0.5s all;
-				margin: 10% 5% 10% 5%;
-				width: 90%;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				gap: 0.5rem;
-				text-align: center;
-				border-radius: $br_r_5;
-				overflow: hidden;
-				&:hover {
-					box-shadow: 0 4px 15px rgba(0, 0, 0, 0.555);
-					transform: scale(1.02);
-				}
-				&:hover img {
-					border-radius: 5px 5px 0px 0px;
-				}
-				img {
-					width: 100%;
-					height: 200px;
-					object-fit: cover;
-					border-radius: $br_r_5;
-					transition: 0.5s all;
-					&:hover {
-						transform: scale(1.02);
-					}
-				}
-				h3 {
-					font-family: $font_titles;
-				}
-				p {
-					width: 85%;
-					font-family: $font_texts;
-					line-height: 1.4rem;
-					color: #666;
-					text-align: justify;
-				}
-				span {
-					button {
-						padding: 0% 10%;
-						color: aqua;
-					}
-				}
-			}
-		}
 	}
 }
 

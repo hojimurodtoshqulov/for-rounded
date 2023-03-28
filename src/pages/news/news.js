@@ -25,9 +25,9 @@ const News = () => {
 				<NavbarLinks />
 				<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
 				<ShowBg bgImage={bgImg} title={"News"} />
-				{/* <h2 className="page__title">{t("news")}</h2> */}
+				<h2 className="page__title">{t("news")}</h2>
 				<div
-					className="carousel wrapper"
+					className="news wrapper"
 					data-aos="zoom-in-up"
 					data-aos-duration="1000"
 				>

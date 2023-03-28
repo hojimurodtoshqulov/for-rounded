@@ -9,6 +9,7 @@ import bgImg from "../../media/tz_kurs1.png";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 import Carousel from "../../components/carousel/carousel";
+import Categories from "../../components/categories/categories";
 const Services = () => {
 	const { t } = useTranslation();
 	const handleClick = (e) => {
@@ -22,10 +23,10 @@ const Services = () => {
 				<NavbarLinks />
 				<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
 				<ShowBg bgImage={bgImg} />
-				{/* <h2 className="page__title">{t("service")}</h2> */}
+				<h2 className="page__title">{t("service")}</h2>
 				<div className="wrapper">
 					<Carousel />
-
+					<Categories />
 				</div>
 				<Footer />
 			</div>
