@@ -8,7 +8,7 @@ const Header = () => {
 	return (
 		<div className={scss.header}>
 			<div className={scss.header__col1} data-aos="fade-right"></div>
-			<div className={scss.header__col2} data-aos="fade-up-left">
+			{/* <div className={scss.header__col2} data-aos="fade-up-left">
 				<img
 					src={img2}
 					alt="bla"
@@ -17,7 +17,7 @@ const Header = () => {
 					data-aos-duration="2000"
 				/>
 				<div></div>
-			</div>
+			</div> */}
 			<div
 				className={scss.header__elements}
 				data-aos="zoom-in"

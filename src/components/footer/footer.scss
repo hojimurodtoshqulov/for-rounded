@@ -7,6 +7,7 @@ footer {
 	align-items: flex-start;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	max-width: $xxl;
 	.col1 {
 		width: 28%;
 		display: flex;
@@ -51,7 +52,7 @@ footer {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		gap: 1rem;
+		gap: 1.3rem;
 		button {
 			padding: 15px 30px;
 		}
@@ -63,6 +64,7 @@ footer {
 			align-items: center;
 			justify-content: space-between;
 			gap: 0.7rem;
+			margin-top: 0.3rem;
 			a {
 				transition: 1s;
 				&:hover {

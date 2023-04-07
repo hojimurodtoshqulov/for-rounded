@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Allerta+Stencil&family=Marko+One&family=Playfair+Display:wght@600;700;800&family=Rozha+One&family=Yatra+One&display=swap");
-@import url("../../scss/varuables.scss");
 // font-family: 'Allerta Stencil', sans-serif;
-
+@import "../../scss/varuables.scss";
 .certificatesImages {
 	padding: 3% 13%;
+
 	h2 {
 		font-family: emoji;
 		font-size: 50px;
@@ -82,6 +82,93 @@
 				left: 0;
 				text-align: center;
 				color: #f1023d;
+			}
+		}
+	}
+}
+@media (min-width: $xxl) {
+	.certificatesImages {
+		padding: 3% 13%;
+		min-height: 60vh;
+		h2 {
+			font-family: emoji;
+			font-size: 50px;
+			margin: 0 0 1rem 0;
+		}
+		.certificatesImages {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+			height: 500px;
+			img {
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+			&__col1 {
+				overflow: hidden;
+				border-radius: 12px;
+				position: relative;
+				width: 28%;
+				img {
+					width: 100%;
+				}
+				h3 {
+					width: 100%;
+					position: absolute;
+					bottom: 5%;
+					left: 0;
+					text-align: center;
+				}
+			}
+			&__col2 {
+				align-self: flex-start;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 3.3rem;
+				width: 28%;
+				padding-bottom: 2.5rem;
+				border-bottom: 3px solid #f1023d;
+				div {
+					overflow: hidden;
+					border-radius: 12px;
+					position: relative;
+					width: 100%;
+					img {
+						width: 100%;
+					}
+					&_img2 {
+					}
+					h3 {
+						width: 100%;
+						position: absolute;
+						bottom: 5%;
+						left: 0;
+						text-align: center;
+						color: #fff;
+					}
+					.certificatesImages__col2_madina {
+						color: #f1023d;
+					}
+				}
+			}
+			&__col3 {
+				overflow: hidden;
+				border-radius: 12px;
+				width: 28%;
+				position: relative;
+				img {
+					width: 100%;
+				}
+				h3 {
+					width: 100%;
+					position: absolute;
+					bottom: 5%;
+					left: 0;
+					text-align: center;
+					color: #f1023d;
+				}
 			}
 		}
 	}

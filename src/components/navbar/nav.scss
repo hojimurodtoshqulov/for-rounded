@@ -19,6 +19,7 @@
 		justify-content: space-between;
 		align-items: center;
 		height: 100%;
+		max-width: $xxl;
 	}
 	&__logo {
 		display: flex;
@@ -61,7 +62,7 @@
 				margin: 0 auto;
 				font-family: $font_texts;
 				li {
-// background: #0e0e12f0;
+					// background: #0e0e12f0;
 					padding: 5px 0;
 					text-transform: uppercase;
 					cursor: pointer;
@@ -216,37 +217,426 @@
 }
 @media (min-width: $xxl) {
 	.nav {
-		&__elements {
-			&-title {
-				font-size: 2.5em;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 124;
+		width: $w_100;
+		padding: 0 7%;
+		margin: 0 auto;
+		transition: 0.3s;
+		.navContainer {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 100%;
+		}
+		&__logo {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 0.4rem;
+			height: 60%;
+			width: 20%;
+			cursor: pointer;
+			color: $light;
+			animation: logo 7s 2s linear infinite;
+			&:hover {
+				color: $light;
 			}
+			h5 {
+				font-family: emoji;
+				span {
+					font-family: emoji;
+					font-size: 0.8em;
+				}
+			}
+			&-img {
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		&__elements {
+			width: 70%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
 			&-linksDiv {
-				width: 75%;
+				width: 100%;
 				&-ul {
-					width: 70%;
-					font-size: 2em;
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					font-size: 1.4em;
+					margin: 0 auto;
+					font-family: $font_texts;
+					li {
+						// background: #0e0e12f0;
+						padding: 5px 0;
+						text-transform: uppercase;
+						cursor: pointer;
+						// border-bottom: 3px solid rgba(0, 0, 0, 0);
+						a {
+							font-weight: 400;
+							font-size: 20px;
+							color: $light;
+							font-family: sans-serif;
+							span {
+								color: yellow;
+								display: none;
+							}
+						}
+						.line_bottom {
+							width: 0%;
+							height: 0;
+							border-bottom: 3px solid #fc1a53;
+							transition: 0.7s;
+						}
+					}
+					li:hover {
+						// border-bottom: 3px solid #d31b1b;
+						a {
+							color: $light;
+							span {
+								color: yellow;
+								opacity: 0;
+							}
+						}
+						.line_bottom {
+							width: 100%;
+							height: 0;
+							border-bottom: 3px solid #fc1a53;
+						}
+					}
 				}
 			}
 			&-others {
 				width: 26%;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				justify-content: center;
 				gap: 0.5em;
-				a {
-					font-size: 1.5em;
+				&-mail {
 				}
 				&-language {
+					align-self: flex-end;
+					display: flex;
 					gap: 0.3rem;
 					&-img {
-						width: 40px;
-						height: 40px;
+						width: 20px;
+						height: 20px;
+						object-fit: cover;
+						cursor: pointer;
+						box-shadow: 0 4px 6px rgba(0, 0, 0, 0.503);
+						border: none;
+						border-radius: 50%;
+					}
+				}
+			}
+
+			.lang {
+				position: relative;
+				cursor: pointer;
+				&:hover {
+					.lang__check {
+						top: 50%;
+						opacity: 1;
+						z-index: 123;
+					}
+				}
+				p {
+					font-size: 18px !important;
+					font-weight: 100;
+					display: flex;
+					align-items: center;
+					font-family: sans-serif;
+					&:hover {
+						color: #d31b1b;
+					}
+					img {
+						width: 20px;
+						height: 20px;
+						object-fit: cover;
+						cursor: pointer;
+						box-shadow: 0 4px 6px rgba(0, 0, 0, 0.503);
+						border: none;
+						border-radius: 50%;
+						margin-right: 0.3rem;
+					}
+				}
+				&__check {
+					padding-top: 10px;
+					width: 100%;
+					height: 60px;
+					position: absolute;
+					top: -100%;
+					left: 0;
+					display: flex;
+					flex-direction: column;
+					gap: 0.3rem;
+					z-index: -1234;
+					opacity: 0;
+					span {
+						width: 20px;
+						height: 20px;
+						font-family: sans-serif;
+					}
+					&-img {
+						width: 20px;
+						height: 20px;
+						object-fit: cover;
+						cursor: pointer;
+						box-shadow: 0 4px 6px rgba(0, 0, 0, 0.503);
+						border: none;
+						border-radius: 50%;
+						padding: 0 0 0 100%;
+						text-shadow: 1px 2px 5px #000;
+						font-family: sans-serif;
+						&:hover {
+							color: #d31b1b;
+						}
+					}
+					.eng {
+						background-image: url("https://vectorflags.s3.amazonaws.com/flags/uk-circle-01.png");
+						background-size: cover;
+					}
+					.rus {
+						background-image: url("../../media/russianFlag.png");
+						background-size: cover;
 					}
 				}
 			}
 		}
-		.fa-solid {
-			margin-right: 0.3rem;
+
+		&__mobile {
+			display: none;
+			&-elements {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				gap: 3%;
+				p {
+					font-size: 1.3em;
+					transform: rotateY(180deg);
+					justify-self: flex-end;
+				}
+			}
 		}
 	}
 }
+// @media (max-width: $xxl) {
+// .nav {
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	z-index: 124;
+// 	width: $w_100;
+// 	padding: 0 7%;
+// 	margin: 0 auto;
+// 	transition: 0.3s;
+// 	.navContainer {
+// 		display: flex;
+// 		justify-content: space-between;
+// 		align-items: center;
+// 		height: 100%;
+// 	}
+// 	&__logo {
+// 		display: flex;
+// 		align-items: center;
+// 		justify-content: flex-start;
+// 		gap: 0.4rem;
+// 		height: 60%;
+// 		width: 20%;
+// 		cursor: pointer;
+// 		color: $light;
+// 		animation: logo 7s 2s linear infinite;
+// 		&:hover {
+// 			color: $light;
+// 		}
+// 		h5 {
+// 			font-family: emoji;
+// 			span {
+// 				font-family: emoji;
+// 				font-size: 0.8em;
+// 			}
+// 		}
+// 		&-img {
+// 			height: 100%;
+// 			object-fit: cover;
+// 		}
+// 	}
+// 	&__elements {
+// 		width: 70%;
+// 		display: flex;
+// 		justify-content: space-between;
+// 		align-items: center;
+// 		&-linksDiv {
+// 			width: 100%;
+// 			&-ul {
+// 				width: 100%;
+// 				display: flex;
+// 				justify-content: space-between;
+// 				align-items: center;
+// 				font-size: 1.4em;
+// 				margin: 0 auto;
+// 				font-family: $font_texts;
+// 				li {
+// // background: #0e0e12f0;
+// 					padding: 5px 0;
+// 					text-transform: uppercase;
+// 					cursor: pointer;
+// 					// border-bottom: 3px solid rgba(0, 0, 0, 0);
+// 					a {
+// 						font-weight: 400;
+// 						font-size: 20px;
+// 						color: $light;
+// 						font-family: sans-serif;
+// 						span {
+// 							color: yellow;
+// 							display: none;
+// 						}
+// 					}
+// 					.line_bottom {
+// 						width: 0%;
+// 						height: 0;
+// 						border-bottom: 3px solid #fc1a53;
+// 						transition: 0.7s;
+// 					}
+// 				}
+// 				li:hover {
+// 					// border-bottom: 3px solid #d31b1b;
+// 					a {
+// 						color: $light;
+// 						span {
+// 							color: yellow;
+// 							opacity: 0;
+// 						}
+// 					}
+// 					.line_bottom {
+// 						width: 100%;
+// 						height: 0;
+// 						border-bottom: 3px solid #fc1a53;
+// 					}
+// 				}
+// 			}
+// 		}
+// 		&-others {
+// 			width: 26%;
+// 			display: flex;
+// 			flex-direction: column;
+// 			align-items: flex-end;
+// 			justify-content: center;
+// 			gap: 0.5em;
+// 			&-mail {
+// 			}
+// 			&-language {
+// 				align-self: flex-end;
+// 				display: flex;
+// 				gap: 0.3rem;
+// 				&-img {
+// 					width: 20px;
+// 					height: 20px;
+// 					object-fit: cover;
+// 					cursor: pointer;
+// 					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.503);
+// 					border: none;
+// 					border-radius: 50%;
+// 				}
+// 			}
+// 		}
+
+// 		.lang {
+// 			position: relative;
+// 			cursor: pointer;
+// 			&:hover {
+// 				.lang__check {
+// 					top: 50%;
+// 					opacity: 1;
+// 					z-index: 123;
+// 				}
+// 			}
+// 			p {
+// 				font-size: 18px !important;
+// 				font-weight: 100;
+// 				display: flex;
+// 				align-items: center;
+// 				font-family: sans-serif;
+// 				&:hover {
+// 					color: #d31b1b;
+// 				}
+// 				img {
+// 					width: 20px;
+// 					height: 20px;
+// 					object-fit: cover;
+// 					cursor: pointer;
+// 					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.503);
+// 					border: none;
+// 					border-radius: 50%;
+// 					margin-right: 0.3rem;
+// 				}
+// 			}
+// 			&__check {
+// 				padding-top: 10px;
+// 				width: 100%;
+// 				height: 60px;
+// 				position: absolute;
+// 				top: -100%;
+// 				left: 0;
+// 				display: flex;
+// 				flex-direction: column;
+// 				gap: 0.3rem;
+// 				z-index: -1234;
+// 				opacity: 0;
+// 				span {
+// 					width: 20px;
+// 					height: 20px;
+// 					font-family: sans-serif;
+// 				}
+// 				&-img {
+// 					width: 20px;
+// 					height: 20px;
+// 					object-fit: cover;
+// 					cursor: pointer;
+// 					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.503);
+// 					border: none;
+// 					border-radius: 50%;
+// 					padding: 0 0 0 100%;
+// 					text-shadow: 1px 2px 5px #000;
+// 					font-family: sans-serif;
+// 					&:hover {
+// 						color: #d31b1b;
+// 					}
+// 				}
+// 				.eng {
+// 					background-image: url("https://vectorflags.s3.amazonaws.com/flags/uk-circle-01.png");
+// 					background-size: cover;
+// 				}
+// 				.rus {
+// 					background-image: url("../../media/russianFlag.png");
+// 					background-size: cover;
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	&__mobile {
+// 		display: none;
+// 		&-elements {
+// 			display: flex;
+// 			justify-content: flex-end;
+// 			align-items: center;
+// 			gap: 3%;
+// 			p {
+// 				font-size: 1.3em;
+// 				transform: rotateY(180deg);
+// 				justify-self: flex-end;
+// 			}
+// 		}
+// 	}
+// }
+// }
 @media (max-width: $xl) {
 	.nav {
 		&__elements {

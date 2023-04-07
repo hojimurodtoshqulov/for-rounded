@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Allerta+Stencil&family=Marko+One&family=Playfair+Display:wght@600;700;800&family=Rozha+One&family=Yatra+One&display=swap");
 @import url("../../scss/varuables.scss");
 // font-family: 'Allerta Stencil', sans-serif;
-
+@import "../../scss/varuables.scss";
 .mentorsComponent {
 	margin: 100px 0 !important;
 	padding: 0% 7%;
@@ -9,7 +9,6 @@
 	flex-direction: column;
 	gap: 50px;
 	h2 {
-	
 		font-family: emoji;
 		font-size: 50px;
 	}
@@ -18,7 +17,6 @@
 		align-items: flex-end;
 		justify-content: space-between;
 		height: 450px;
-	
 
 		img {
 			&:hover {
@@ -99,8 +97,6 @@
 		}
 	}
 	.mentorsNumbers {
-	
-
 		display: flex;
 		justify-content: space-between;
 		width: 60%;
@@ -134,7 +130,143 @@
 		}
 	}
 }
-@media (max-width: 1200px) {
+@media (min-width: $xxl) {
+	.mentorsComponent {
+		margin: 100px 0 !important;
+		padding: 0% 7%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 50px;
+		// min-height: 80vh;
+
+		h2 {
+			font-family: emoji;
+			font-size: 50px;
+			align-self: flex-start;
+		}
+		.mentorsImages {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+			height: 450px;
+
+			img {
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+			&__col1 {
+				position: relative;
+				width: 20%;
+				&_imgDiv {
+					overflow: hidden;
+					border-radius: 13px;
+				}
+				img {
+					width: 100%;
+				}
+				h3 {
+					width: 100%;
+					position: absolute;
+					bottom: 5%;
+					left: 0;
+					text-align: center;
+				}
+			}
+			&__col2 {
+				align-self: flex-start;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 3.3rem;
+				width: 46%;
+				padding-bottom: 2.5rem;
+				border-bottom: 3px solid #f1023d;
+				div {
+					position: relative;
+					width: 45%;
+					.mentorsImages__col2_imgDiv {
+						width: 100%;
+						overflow: hidden;
+						border-radius: 13px;
+					}
+					img {
+						width: 100%;
+					}
+					&_img2 {
+					}
+					h3 {
+						width: 100%;
+						position: absolute;
+						bottom: 5%;
+						left: 0;
+						text-align: center;
+						color: #fff;
+					}
+					.mentorsImages__col2_madina {
+						color: #f1023d;
+					}
+				}
+			}
+			&__col3 {
+				width: 20%;
+				position: relative;
+				&_imgDiv {
+					overflow: hidden;
+					border-radius: 13px;
+				}
+				img {
+					width: 100%;
+				}
+				h3 {
+					width: 100%;
+					position: absolute;
+					bottom: 5%;
+					left: 0;
+					text-align: center;
+					color: #f1023d;
+				}
+			}
+		}
+		.mentorsNumbers {
+			display: flex;
+			justify-content: space-between;
+			width: 60%;
+			margin: 0 auto;
+			text-align: center;
+			margin-top: 2vh;
+			&__col {
+				width: 24%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				gap: 1rem;
+				transition: 2s;
+				&:hover {
+					.col {
+						transform: perspective(200px) rotateY(360deg);
+					}
+				}
+				h3 {
+					font-family: "Allerta Stencil", sans-serif;
+					color: #f1023d;
+					font-weight: 100;
+					font-size: 40px;
+					transition: 2s;
+					cursor: pointer;
+				}
+			}
+			.col {
+				transition: 1s;
+			}
+		}
+	}
+}
+@media (max-width: $xl) {
 	.mentorsImages {
 		h2 {
 			font-family: emoji;
@@ -241,7 +373,7 @@
 		}
 	}
 }
-@media (max-width: 765px) {
+@media (max-width: $md) {
 	.mentorsImages {
 		padding: 3% 7%;
 		h2 {
