@@ -64,7 +64,7 @@ const Nav = ({ onClick }) => {
 				<div
 					className=" navContainer"
 					style={{
-						borderBottom: navContainerBR,
+						// borderBottom: navContainerBR,
 					}}
 				>
 					<Link className="nav__logo" to="/">

@@ -1,3 +1,4 @@
+@import "../../scss/varuables.scss";
 .light {
 	position: absolute;
 	top: auto;
@@ -7,4 +8,17 @@
 	width: 0px;
 	height: 0px;
 	box-shadow: 0 0 300px 70px #ff3b3b;
+}
+
+@media (min-width: $xxl) {
+	.light {
+		position: absolute;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		width: 0px;
+		height: 0px;
+		box-shadow: 0 0 500px 150px #ff3b3b;
+	}
 }

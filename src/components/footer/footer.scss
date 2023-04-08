@@ -7,7 +7,6 @@ footer {
 	align-items: flex-start;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	max-width: $xxl;
 	.col1 {
 		width: 28%;
 		display: flex;
@@ -74,7 +73,101 @@ footer {
 		}
 	}
 }
-
+@media (min-width: $xxl) {
+	footer {
+		border-top: 3px solid #d31b1b;
+		width: 100%;
+		padding: 3% 7%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.col1 {
+			width: 35%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 1rem;
+			padding-right: 8%;
+			.nav__logo {
+				width: 100%;
+				h5 {
+					font-size: 20px;
+				}
+			}
+			h3 {
+				color: #f4013d;
+				font-size: 30px;
+			}
+			P {
+				font-size: 25px;
+			}
+		}
+		.col2 {
+			width: 20%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0rem;
+			&__div {
+				height: 3rem;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				transition: 1s !important;
+				&:hover {
+					transform: perspective(100px) rotateX(360deg);
+					a {
+						color: #f4013d;
+					}
+				}
+				a {
+					display: inline-block;
+					font-size: 30px;
+					span {
+						color: #f4013d;
+					}
+				}
+			}
+		}
+		.col4 {
+			width: 25%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			gap: 1.3rem;
+			button {
+				padding: 15px 30px;
+				font-size: 30px;
+			}
+			a {
+				display: block;
+				font-size: 25px;
+			}
+			p {
+				font-size: 25px;
+			}
+			&_img {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 0.7rem;
+				margin-top: 0.5rem;
+				a {
+					transition: 1s;
+					&:hover {
+						transform: perspective(200px) rotateY(180deg);
+					}
+					img {
+						width: 80px;
+						height: 80px;
+					}
+				}
+			}
+		}
+	}
+}
 @media (max-width: $md) {
 	footer {
 		background: #0e0e12;

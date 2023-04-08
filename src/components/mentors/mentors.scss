@@ -34,6 +34,7 @@
 				width: 100%;
 			}
 			h3 {
+				font-size: 30px;
 				width: 100%;
 				position: absolute;
 				bottom: 5%;
@@ -64,6 +65,7 @@
 				&_img2 {
 				}
 				h3 {
+					font-size: 30px;
 					width: 100%;
 					position: absolute;
 					bottom: 5%;
@@ -87,6 +89,7 @@
 				width: 100%;
 			}
 			h3 {
+				font-size: 30px;
 				width: 100%;
 				position: absolute;
 				bottom: 5%;
@@ -117,6 +120,7 @@
 				}
 			}
 			h3 {
+				font-size: 30px;
 				font-family: "Allerta Stencil", sans-serif;
 				color: #f1023d;
 				font-weight: 100;
@@ -143,14 +147,14 @@
 
 		h2 {
 			font-family: emoji;
-			font-size: 50px;
+			font-size: 80px;
 			align-self: flex-start;
 		}
 		.mentorsImages {
 			display: flex;
 			align-items: flex-end;
 			justify-content: space-between;
-			height: 450px;
+			height: 650px;
 
 			img {
 				&:hover {
@@ -168,6 +172,7 @@
 					width: 100%;
 				}
 				h3 {
+					font-size: 30px;
 					width: 100%;
 					position: absolute;
 					bottom: 5%;
@@ -198,6 +203,7 @@
 					&_img2 {
 					}
 					h3 {
+						font-size: 30px;
 						width: 100%;
 						position: absolute;
 						bottom: 5%;
@@ -221,6 +227,7 @@
 					width: 100%;
 				}
 				h3 {
+					font-size: 30px;
 					width: 100%;
 					position: absolute;
 					bottom: 5%;
@@ -255,9 +262,12 @@
 					font-family: "Allerta Stencil", sans-serif;
 					color: #f1023d;
 					font-weight: 100;
-					font-size: 40px;
+					font-size: 70px;
 					transition: 2s;
 					cursor: pointer;
+				}
+				p {
+					font-size: 25px;
 				}
 			}
 			.col {
@@ -289,6 +299,7 @@
 					width: 100%;
 				}
 				h3 {
+					font-size: 30px;
 					width: 100%;
 					position: absolute;
 					bottom: 5%;
@@ -314,6 +325,7 @@
 					&_img2 {
 					}
 					h3 {
+						font-size: 30px;
 						width: 100%;
 						position: absolute;
 						bottom: 5%;
@@ -333,6 +345,7 @@
 					width: 100%;
 				}
 				h3 {
+					font-size: 30px;
 					width: 100%;
 					position: absolute;
 					bottom: 5%;
@@ -362,6 +375,7 @@
 					transform: perspective(200px) rotateY(360deg);
 				}
 				h3 {
+					font-size: 30px;
 					font-family: "Allerta Stencil", sans-serif;
 					color: #f1023d;
 					font-weight: 100;
@@ -397,6 +411,7 @@
 					width: 100%;
 				}
 				h3 {
+					font-size: 30px;
 					width: 100%;
 					position: absolute;
 					bottom: 5%;
@@ -422,6 +437,7 @@
 					&_img2 {
 					}
 					h3 {
+						font-size: 30px;
 						width: 100%;
 						position: absolute;
 						bottom: 5%;
@@ -441,6 +457,7 @@
 					width: 100%;
 				}
 				h3 {
+					font-size: 30px;
 					width: 100%;
 					position: absolute;
 					bottom: 5%;
@@ -470,6 +487,7 @@
 					transform: perspective(200px) rotateY(360deg);
 				}
 				h3 {
+					font-size: 30px;
 					font-family: "Allerta Stencil", sans-serif;
 					color: #f1023d;
 					font-weight: 100;

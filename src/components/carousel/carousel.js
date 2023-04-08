@@ -145,7 +145,7 @@ const Carousel = () => {
 				</h2>
 				<div className="slide_track">
 					{dataCards?.map((item, index) => (
-						<div className="slide" key={index}>
+						<Link to="/services" className="slide" key={index}>
 							<img src={item.img} alt="" />
 							<div className="titlesDiv">
 								<h5>{item.title}</h5>
@@ -159,7 +159,7 @@ const Carousel = () => {
 									<span>{item.arrowR}</span>
 								</Link>
 							</div>
-						</div>
+						</Link>
 					))}
 				</div>
 				<Link to="/services"><Button buttonTitle={"ВСЕ КУРСЫ"} /></Link>

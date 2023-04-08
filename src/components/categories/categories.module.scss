@@ -1,3 +1,5 @@
+@import "../../scss/varuables.scss";
+
 .categories {
 	position: relative;
 	z-index: 123;
@@ -33,7 +35,44 @@
 		}
 	}
 }
-@media (max-width: 1200px) {
+@media (min-width: $xxl) {
+	.categories {
+		position: relative;
+		z-index: 123;
+		margin: 0 7%;
+		padding: 5% 7%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-radius: 20px;
+		background: linear-gradient(#c1343424, #5029291f);
+		a {
+			width: 20%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+			&:hover {
+				img {
+					transform: perspective(200px) rotateY(-180deg);
+				}
+			}
+			img {
+				border-radius: 50%;
+				transition: 1s;
+				// &:hover {
+				// 	transform: perspective(200px) rotateY(-180deg);
+				// }
+			}
+			p {
+				font-size: 30px;
+				text-align: center;
+			}
+		}
+	}
+}
+@media (max-width: $xl) {
 	.categories {
 		a {
 			width: 24%;
@@ -43,7 +82,7 @@
 		}
 	}
 }
-@media (max-width: 765px) {
+@media (max-width: $md) {
 	.categories {
 		a {
 			width: 24%;
@@ -56,7 +95,7 @@
 		}
 	}
 }
-@media (max-width: 500px) {
+@media (max-width: $sm) {
 	.categories {
 		a {
 			width: 24%;
