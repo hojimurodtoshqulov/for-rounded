@@ -6,7 +6,7 @@
 }
 .company {
 	background: #000;
-	margin-top: 50vh !important;
+	margin-top: 40vh !important;
 	.nav {
 		&__elements {
 			&-linksDiv {
@@ -35,10 +35,10 @@
 		font-size: 3em;
 		width: 26%;
 		text-align: center;
-		color: #e80023;
+		color: #fff;
 		font-weight: 500;
 		// background: #000;
-		text-shadow: 0 2px 3px #af001a;
+		text-shadow: 0 2px 3px #fff;
 		// box-shadow: 0 3px 10px rgba(241, 74, 74, 0.281);
 		z-index: 12;
 		border-radius: $br_r_5;
@@ -92,7 +92,7 @@
 							display: none;
 						}
 						p {
-							font-size: 1.2em;
+							// font-size: 1.2em;
 							font-family: $font_texts;
 							font-weight: 500;
 							color: $light;
@@ -100,6 +100,93 @@
 						}
 						button {
 							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: $xxl) {
+	.company {
+		background: #000;
+		margin-top: 40vh !important;
+		.page__title {
+			position: absolute;
+			left: 37%;
+			top: 40vh;
+			overflow: hidden;
+			padding: 2% 0 2% 0;
+			font-family: $font_titles;
+			font-size: 3em;
+			width: 26%;
+			text-align: center;
+			color: #fff;
+			font-weight: 500;
+			// background: #000;
+			text-shadow: 0 2px 3px #fff;
+			// box-shadow: 0 3px 10px rgba(241, 74, 74, 0.281);
+			z-index: 12;
+			border-radius: $br_r_5;
+			text-transform: capitalize;
+		}
+		.infoDiv {
+			.info {
+				margin: 0;
+				padding: 5% 0 0 0;
+				.wrapper {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					gap: 3rem;
+					& :nth-child(2) {
+						.info-img-div {
+							order: 2;
+						}
+						.info-titles-div {
+							order: 1;
+						}
+					}
+					.info-elements {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						padding: 3% 0 10% 0;
+						.info-img-div {
+							width: $w_50;
+							height: 100%;
+							img {
+								width: $w_100;
+								height: 500px;
+								object-fit: cover;
+								border-radius: $br_r_10;
+								&:hover {
+									transform: scale(1.05);
+								}
+							}
+						}
+						.info-titles-div {
+							width: 45%;
+							display: flex;
+							flex-wrap: wrap;
+							gap: 2em;
+							align-items: flex-start;
+							justify-content: space-between;
+							text-align: justify;
+							h2 {
+								display: none;
+							}
+							p {
+								// font-size: 1.2em;
+								font-family: $font_texts;
+								font-weight: 500;
+								color: $light;
+								line-height: 33px;
+							}
+							button {
+								display: none;
+							}
 						}
 					}
 				}

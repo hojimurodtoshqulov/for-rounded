@@ -46,7 +46,9 @@ const Company = () => {
 				<ShowBg bgImage={bgImg} title={"Our company"} />
 				<h2 className="page__title">{t("company")}</h2>
 				<div className="infoDiv">
-					<OurCompany OurCompanyData={OurCompanyData} />
+					<div className="infoDiv">
+						<OurCompany OurCompanyData={OurCompanyData} />
+					</div>
 					<div>
 						<Categories />
 					</div>

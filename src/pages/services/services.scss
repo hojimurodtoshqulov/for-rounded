@@ -6,7 +6,7 @@
 }
 .services {
 	background: #000;
-	margin-top: 50vh !important;
+	margin-top: 40vh !important;
 	.nav {
 		&__elements {
 			&-linksDiv {
@@ -38,7 +38,7 @@
 		color: $light;
 		font-weight: 500;
 		// background: #000;
-		text-shadow: 0 2px 3px $dark;
+		text-shadow: 0 2px 3px $light;
 		// box-shadow: 0 3px 10px rgba(241, 74, 74, 0.281);
 		z-index: 12;
 		border-radius: $br_r_5;

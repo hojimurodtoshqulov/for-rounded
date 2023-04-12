@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 }
 .mentorsss {
-	margin-top: 50vh !important;
+	margin-top: 40vh !important;
 }
 .mentors {
 	background: #000;
@@ -38,11 +38,9 @@
 		font-size: 3em;
 		width: 26%;
 		text-align: center;
-		color: #e80023;
+		color: #fff;
 		font-weight: 500;
-		// background: #000;
-		text-shadow: 0 2px 3px #af001a;
-		// box-shadow: 0 3px 10px rgba(241, 74, 74, 0.281);
+		text-shadow: 0 2px 3px #fff;
 		z-index: 12;
 		border-radius: $br_r_5;
 		text-transform: capitalize;
@@ -54,7 +52,14 @@
 		}
 	}
 }
-
+@media (min-width: $xxl) {
+	.mentorsImages {
+		margin-top: 5vh;
+	}
+	.mentorsNumbers {
+		width: 70vw !important;
+	}
+}
 @media (max-width: $xl) {
 	.services {
 		.page__title {
