@@ -60,6 +60,14 @@
 		width: 70vw !important;
 	}
 }
+@media (min-width: 1500px) {
+	.mentorsImages {
+		margin-top: 5vh;
+	}
+	.mentorsNumbers {
+		width: 70vw !important;
+	}
+}
 @media (max-width: $xl) {
 	.services {
 		.page__title {

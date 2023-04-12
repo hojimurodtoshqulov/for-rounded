@@ -70,7 +70,74 @@
 		}
 	}
 }
+@media (min-width: 1500px) {
+	.services {
+		background: #000;
+		margin-top: 40vh !important;
+		.nav {
+			&__elements {
+				&-linksDiv {
+					&-ul {
+						&-services {
+							&:hover {
+							}
+							a {
+								color: #f3023e;
+								span {
+									display: inline-block;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.page__title {
+			position: absolute;
+			left: 37%;
+			top: 40vh;
+			overflow: hidden;
+			padding: 2% 0 2% 0;
+			font-family: $font_titles;
+			font-size: 3em;
+			width: 26%;
+			text-align: center;
+			color: $light;
+			font-weight: 500;
+			// background: #000;
+			text-shadow: 0 2px 3px $light;
+			// box-shadow: 0 3px 10px rgba(241, 74, 74, 0.281);
+			z-index: 12;
+			border-radius: $br_r_5;
+			text-transform: capitalize;
+		}
+		.wrapper {
+			padding: 2% 0 5% 0;
+			.sectionSlides {
+				.slider {
+					padding: 0 0 3% 0;
 
+					overflow: auto;
+					h2 {
+						display: none;
+					}
+					.slide_track {
+						overflow: auto;
+						padding: 3% 0;
+						.slide {
+							position: relative;
+							z-index: 1234;
+							&:hover {
+								z-index: 1234;
+								// transform: scale(1);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 @media (max-width: $xl) {
 	.services {
 		.page__title {
