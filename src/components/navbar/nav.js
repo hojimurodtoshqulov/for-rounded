@@ -8,7 +8,7 @@ import { WiStars } from "react-icons/wi";
 import { FiChevronDown } from "react-icons/fi";
 import ruLogo from "../../media/russianFlag.png";
 const Nav = ({ onClick }) => {
-	const [navSize, setnavSize] = useState("100px");
+	const [navSize, setnavSize] = useState("12vh");
 	const [navColorBg, setnavColorBg] = useState("transparent");
 	const [navColor, setnavColor] = useState("#fff");
 	const [navLogoFSZ, setNavLogoFSZ] = useState("12px");
@@ -17,7 +17,7 @@ const Nav = ({ onClick }) => {
 		window.scrollY > 150
 			? setnavColorBg("#0e0e12f0")
 			: setnavColorBg("transparent");
-		window.scrollY > 150 ? setnavSize("80px") : setnavSize("110px");
+		window.scrollY > 150 ? setnavSize("9vh") : setnavSize("12vh");
 		window.scrollY > 150 ? setNavLogoFSZ("9px") : setNavLogoFSZ("12px");
 		window.scrollY > 150 ? setnavColor("#fff") : setnavColor("#fff");
 		window.scrollY > 150
@@ -63,13 +63,15 @@ const Nav = ({ onClick }) => {
 			>
 				<div
 					className=" navContainer"
-					style={{
-						// borderBottom: navContainerBR,
-					}}
+					style={
+						{
+							// borderBottom: navContainerBR,
+						}
+					}
 				>
 					<Link className="nav__logo" to="/">
 						<img className="nav__logo-img" src={navLogo} alt="nav logo" />
-						<h5 style={{ fontSize: navLogoFSZ }}>
+						<h5 >
 							АКАДЕМИЯ ИСКУССТВА <br /> ПУБЛИЧНЫХ ВЫСТУПЛЕНИЙ <br />
 							<span>ТИМУРА АРИПОВА</span>
 						</h5>
@@ -82,7 +84,10 @@ const Nav = ({ onClick }) => {
 							}}
 						>
 							<ul className="nav__elements-linksDiv-ul">
-								<li onClick={scrollToTop} className="nav__elements-linksDiv-ul-company">
+								<li
+									onClick={scrollToTop}
+									className="nav__elements-linksDiv-ul-company"
+								>
 									<Link to="/company">
 										{t("company")}{" "}
 										<span>
@@ -91,7 +96,10 @@ const Nav = ({ onClick }) => {
 									</Link>
 									<div className="line_bottom"></div>
 								</li>
-								<li onClick={scrollToTop} className="nav__elements-linksDiv-ul-services">
+								<li
+									onClick={scrollToTop}
+									className="nav__elements-linksDiv-ul-services"
+								>
 									<Link to="/services">
 										{t("service")}{" "}
 										<span>
@@ -100,7 +108,10 @@ const Nav = ({ onClick }) => {
 									</Link>
 									<div className="line_bottom"></div>
 								</li>
-								<li onClick={scrollToTop} className="nav__elements-linksDiv-ul-news">
+								<li
+									onClick={scrollToTop}
+									className="nav__elements-linksDiv-ul-news"
+								>
 									<Link to="/news">
 										{t("news")}{" "}
 										<span>
@@ -109,7 +120,10 @@ const Nav = ({ onClick }) => {
 									</Link>
 									<div className="line_bottom"></div>
 								</li>
-								<li onClick={scrollToTop} className="nav__elements-linksDiv-ul-mentors">
+								<li
+									onClick={scrollToTop}
+									className="nav__elements-linksDiv-ul-mentors"
+								>
 									<Link to="/mentors">
 										{t("mentors")}
 										<span>
@@ -151,7 +165,10 @@ const Nav = ({ onClick }) => {
 										</span>
 									</div>
 								</div>
-								<li onClick={scrollToTop} className="nav__elements-linksDiv-ul-contact">
+								<li
+									onClick={scrollToTop}
+									className="nav__elements-linksDiv-ul-contact"
+								>
 									<Link to="/contact">
 										{t("contact")}{" "}
 										<span>

@@ -36,9 +36,10 @@
 		}
 		h5 {
 			font-family: emoji;
+			font-size: 0.7rem;
 			span {
 				font-family: emoji;
-				font-size: 0.8em;
+				font-size: 0.6rem;
 			}
 		}
 		&-img {
@@ -237,7 +238,7 @@
 			justify-content: flex-start;
 			gap: 0.4rem;
 			height: 70%;
-			width: 20%;
+			width: 25%;
 			cursor: pointer;
 			color: $light;
 			animation: logo 7s 2s linear infinite;
@@ -246,9 +247,10 @@
 			}
 			h5 {
 				font-family: emoji;
+				font-size: 1.2rem;
 				span {
 					font-family: emoji;
-					font-size: 0.8em;
+					font-size: 1rem;
 				}
 			}
 			&-img {
@@ -257,7 +259,7 @@
 			}
 		}
 		&__elements {
-			width: 70%;
+			width: 68%;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
