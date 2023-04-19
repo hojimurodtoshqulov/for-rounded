@@ -694,6 +694,9 @@
 			&-img {
 				height: 80%;
 			}
+			h5{
+				font-size: 0.8rem;
+			}
 		}
 		&__elements {
 			display: none;
@@ -721,6 +724,10 @@
 			width: 65%;
 			&-img {
 				height: 70%;
+			}
+
+			h5{
+				display: none;
 			}
 		}
 		&__mobile {

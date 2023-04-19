@@ -149,8 +149,14 @@
 }
 @media (max-width: $xs) {
 	.nav__links {
+		h5{
+			visibility: hidden;
+		}
 		.nav__logo {
 			width: 60%;
+			.text{
+				display: block;
+			}
 		}
 		h2 {
 			font-size: 1.1rem;

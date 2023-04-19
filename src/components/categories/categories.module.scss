@@ -37,6 +37,7 @@
 }
 @media (min-width: $xxl) {
 	.categories {
+		
 		position: relative;
 		z-index: 123;
 		margin: 0 7%;
@@ -84,7 +85,9 @@
 }
 @media (max-width: $md) {
 	.categories {
+		
 		a {
+		
 			width: 24%;
 			img {
 				width: 80%;
@@ -97,16 +100,20 @@
 }
 @media (max-width: $sm) {
 	.categories {
+		flex-direction: column;
 		a {
-			width: 24%;
+			margin-bottom: 30px;
+			padding: 2%;
+			width: 80%;
 			img {
 				width: 80%;
 				&:hover {
 					transform: perspective(100px) rotateY(-180deg);
 				}
+				margin-bottom: 5%;
 			}
 			p {
-				font-size: 10px;
+				font-size: 14px;
 			}
 		}
 	}
