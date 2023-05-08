@@ -51,6 +51,8 @@
 	}
 }
 
+
+
 .stages-elements {
 	width: $w_100;
 	border-top: 2px solid;
@@ -155,6 +157,7 @@
 }
 
 @media (max-width: $xl) {
+
 	.stages-elements {
 		padding: 10% 0;
 		.wrapper {
@@ -173,6 +176,7 @@
 }
 
 @media (max-width: $lg) {
+	
 	.stages-elements {
 		padding: 14% 0 18% 0;
 		.wrapper {

@@ -4,6 +4,7 @@ import img2 from "../../media/tz_fingerprint.png";
 import img3 from "../../media/tz_ellipse.png";
 import img4 from "../../media/tz_arrow.png";
 import Button from "../button/button";
+import Titles from "../titles";
 const Header = () => {
 	return (
 		<div className={scss.header}>

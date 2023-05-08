@@ -8,10 +8,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 50px;
-	h2 {
-		font-family: emoji;
-		font-size: 50px;
-	}
+	
 	.mentorsImages {
 		display: flex;
 		align-items: flex-end;
@@ -145,11 +142,7 @@
 		gap: 50px;
 		// min-height: 80vh;
 
-		h2 {
-			font-family: emoji;
-			font-size: 80px;
-			align-self: flex-start;
-		}
+		
 		.mentorsImages {
 			display: flex;
 			align-items: flex-end;
@@ -199,8 +192,7 @@
 					img {
 						width: 100%;
 					}
-					&_img2 {
-					}
+					
 					h3 {
 						font-size: 30px;
 						width: 100%;
@@ -286,11 +278,6 @@
 		gap: 50px;
 		// min-height: 80vh;
 
-		h2 {
-			font-family: emoji;
-			font-size: 80px;
-			align-self: flex-start;
-		}
 		.mentorsImages {
 			display: flex;
 			align-items: flex-end;
@@ -419,10 +406,6 @@
 }
 @media (max-width: $xl) {
 	.mentorsImages {
-		h2 {
-			font-family: emoji;
-			font-size: 50px;
-		}
 		.mentorsImages {
 			display: flex;
 			align-items: flex-end;
@@ -531,10 +514,7 @@
 @media (max-width: $md) {
 	.mentorsImages {
 		padding: 3% 7%;
-		h2 {
-			font-family: emoji;
-			font-size: 50px;
-		}
+		
 		.mentorsImages {
 			display: flex;
 			align-items: flex-end;
@@ -575,8 +555,7 @@
 					img {
 						width: 100%;
 					}
-					&_img2 {
-					}
+					
 					h3 {
 						font-size: 30px;
 						width: 100%;

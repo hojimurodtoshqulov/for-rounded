@@ -100,11 +100,11 @@
 }
 @media (max-width: $sm) {
 	.categories {
-		flex-direction: column;
+		flex-wrap: wrap;
 		a {
 			margin-bottom: 30px;
 			padding: 2%;
-			width: 80%;
+			width: 40%;
 			img {
 				width: 80%;
 				&:hover {

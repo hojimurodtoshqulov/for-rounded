@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { HiArrowLongRight } from "react-icons/hi2";
 import Button from "../button/button";
+import Titles from "../titles";
 const Carousel = () => {
 	const { t } = useTranslation();
 	const dataCards = [
@@ -162,7 +163,9 @@ const Carousel = () => {
 						</Link>
 					))}
 				</div>
+				<div className="coruselbtn">
 				<Link to="/services"><Button buttonTitle={"ВСЕ КУРСЫ"} /></Link>
+				</div>
 			</div>
 		</div>
 	);

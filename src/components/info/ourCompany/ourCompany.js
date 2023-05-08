@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
 import "../info.scss";
-import Button from "../../button/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
 const OurCompany = ({ OurCompanyData }) => {
 	const { t } = useTranslation();
 	return (
@@ -13,6 +13,7 @@ const OurCompany = ({ OurCompanyData }) => {
 						return (
 							<div className="info-elements" key={index} data-aos="fade-up">
 								<h2 className="info-elements-mb-title">{item.title}</h2>
+					
 								<div
 									className="info-titles-div"
 									data-aos="fade-right"

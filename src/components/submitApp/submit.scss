@@ -20,10 +20,7 @@
 	align-items: center;
 	gap: 4em;
 	color: $light;
-	h2 {
-		font-family: emoji;
-		font-size: 50px;
-	}
+	
 	::placeholder {
 		color: $light;
 	}
@@ -32,10 +29,10 @@
 		height: 70px;
 		width: $w_100;
 		display: flex;
-		flex-wrap: wrap;
+		// flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
-		gap: 1em 0;
+		gap : 1em 0;
 		input {
 			height: 100%;
 			background: #202020;
@@ -100,10 +97,7 @@
 		align-items: center;
 		gap: 4em;
 		color: $light;
-		h2 {
-			font-family: emoji;
-			font-size: 80px;
-		}
+		
 		::placeholder {
 			color: $light;
 		}
@@ -112,7 +106,7 @@
 			height: 100px;
 			width: $w_100;
 			display: flex;
-			flex-wrap: wrap;
+			// flex-wrap: wrap;
 			align-items: center;
 			justify-content: space-between;
 			gap: 1em 0;
@@ -155,10 +149,7 @@
 		align-items: center;
 		gap: 4em;
 		color: $light;
-		h2 {
-			font-family: emoji;
-			font-size: 50px;
-		}
+		
 		::placeholder {
 			color: $light;
 		}
@@ -167,7 +158,7 @@
 			height: 70px;
 			width: $w_100;
 			display: flex;
-			flex-wrap: wrap;
+			// flex-wrap: wrap;
 			align-items: center;
 			justify-content: space-between;
 			gap: 1em 0;
@@ -201,17 +192,14 @@
 	.submit {
 		margin: 20% 0;
 		padding: 3% 7%;
-		width: $w_100;
+		// width: $w_100;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		gap: 4em;
 		color: $light;
-		h2 {
-			font-family: emoji;
-			font-size: 50px;
-		}
+		
 		::placeholder {
 			color: $light;
 		}
@@ -219,11 +207,12 @@
 		form {
 			height: 70px;
 			width: $w_100;
-			display: flex;
-			flex-wrap: wrap;
+			// display: flex;
+			// flex-wrap: wrap;
+			flex-direction: column;
 			align-items: center;
-			justify-content: space-between;
-			flex-wrap: wrap;
+			// justify-content: space-between;
+			// flex-wrap: wrap;
 			gap: 1em 0;
 			input {
 				height: 100%;
@@ -241,7 +230,7 @@
 			}
 
 			span {
-				align-self: flex-start;
+				align-self: center;
 				order: 5;
 				width: 47%;
 				button {

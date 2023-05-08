@@ -4,11 +4,7 @@
 .certificatesImages {
 	padding: 3% 13%;
 
-	h2 {
-		font-family: emoji;
-		font-size: 50px;
-		margin: 0 0 1rem 0;
-	}
+	
 	.certificatesImages {
 		display: flex;
 		align-items: flex-end;
@@ -90,11 +86,7 @@
 	.certificatesImages {
 		padding: 3% 13%;
 		min-height: 60vh;
-		h2 {
-			font-family: emoji;
-			font-size: 80px;
-			margin: 0 0 1rem 0;
-		}
+		
 		.certificatesImages {
 			display: flex;
 			align-items: flex-end;
@@ -175,10 +167,7 @@
 }
 @media (max-width: 1200px) {
 	.certificatesImages {
-		h2 {
-			font-family: emoji;
-			font-size: 50px;
-		}
+		
 		.certificatesImages {
 			display: flex;
 			align-items: flex-end;
@@ -218,8 +207,8 @@
 					img {
 						width: 100%;
 					}
-					&_img2 {
-					}
+					// &_img2 {
+					// }
 					h3 {
 						width: 100%;
 						position: absolute;
@@ -234,7 +223,7 @@
 				}
 			}
 			&__col3 {
-				width: 23%;
+				width: 25%;
 				position: relative;
 				img {
 					width: 100%;
@@ -253,46 +242,47 @@
 }
 @media (max-width: 765px) {
 	.certificatesImages {
-		padding: 3% 7%;
-		h2 {
-			font-family: emoji;
-			font-size: 50px;
-		}
+		// padding: 3% 7%;
+		
+		
 		.certificatesImages {
+			// display: flex;
+			// align-items: flex-end;
+			// justify-content: space-between;
+			// flex-direction: column;
 			display: flex;
-			align-items: flex-end;
-			justify-content: space-between;
-			height: 300px;
+			flex-direction: column-reverse;
+			// height: 300px;
 			img {
 				&:hover {
 					transform: scale(1.05);
 				}
 			}
 			&__col1 {
-				position: relative;
-				width: 20%;
+				position: none;
+				// width: 30%;
 				img {
 					width: 100%;
 				}
-				h3 {
-					width: 100%;
-					position: absolute;
-					bottom: 5%;
-					left: 0;
-					text-align: center;
-				}
+				// h3 {
+				// 	width: 100%;
+				// 	// position: absolute;
+				// 	bottom: 5%;
+				// 	left: 0;
+				// 	text-align: center;
+				// }
 			}
 			&__col2 {
-				align-self: flex-start;
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-				gap: 1rem;
-				width: 46%;
-				padding-bottom: 2.5rem;
-				border-bottom: 3px solid #f1023d;
+				// align-self: flex-start;
+				// display: flex;
+				// align-items: center;
+				// justify-content: space-between;
+				// gap: 1rem;
+				// // width: 35%;
+				// padding-bottom: 2.5rem;
+				// border-bottom: 3px solid #f1023d;
 				div {
-					position: relative;
+					 position: none;
 					width: 100%;
 					img {
 						width: 100%;
@@ -300,11 +290,11 @@
 					&_img2 {
 					}
 					h3 {
-						width: 100%;
-						position: absolute;
-						bottom: 5%;
-						left: 0;
-						text-align: center;
+						// width: 100%;
+						position: none;
+						// bottom: 5%;
+						// left: 0;
+						// text-align: center;
 						color: #fff;
 					}
 					.certificatesImages__col2_madina {
@@ -313,17 +303,17 @@
 				}
 			}
 			&__col3 {
-				width: 20%;
-				position: relative;
+				// width: 30%;
+				position:  none;
 				img {
 					width: 100%;
 				}
 				h3 {
 					width: 100%;
-					position: absolute;
-					bottom: 5%;
-					left: 0;
-					text-align: center;
+					position: none;
+					// bottom: 5%;
+					// left: 0;
+					// text-align: center;
 					color: #f1023d;
 				}
 			}

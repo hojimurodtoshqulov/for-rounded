@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Marko+One&family=Playfair+Display:wght@600;700;800&family=Yatra+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Marko+One&family=Playfair+Display:wght@600;700;800&family=Yatra+One&display=swap");
 @import url("https://www.myfonts.com/fonts/jehoo-creative/laviossa/");
+@import "./scss/varuables.scss";
+
 body {
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
@@ -40,8 +42,40 @@ code {
 	// font-family: "Aclonica", sans-serif;
 	font-family: "Laviossa RUS";
 }
-h2 {
-	// font-family: "Aclonica", sans-serif;
-	font-weight: 400;
-font-family: "Laviossa RUS";
+
+h2{
+    align-self: flex-start;
+	// font-family: monospace;
+    font-family: "Marko One", serif;
+    // font-family: "Playfair Display", serif;
+    // font-family: "Yatra One", cursive;
+    // font-family: "Aclonica", sans-serif;
+	// font-family: emoji;
+	font-weight: 500;
+	margin: 2.5rem 0;
+	font-size: 60px;
+    line-height: 117.2%;
+}
+
+@media (min-width: $xxl) {
+    h2{
+       font-size: 80px; 
+    }
+}
+
+@media (min-width: $xl) {
+    h2{ 
+        font-family: "Marko One", serif;
+        font-family: "Playfair Display", serif;
+        font-family: "Yatra One", cursive;
+        font-family: "Aclonica", sans-serif;
+        // font-family: "Rozha One", serif;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: $md) {
+    h2{
+        font-size: 30px;
+    }
 }

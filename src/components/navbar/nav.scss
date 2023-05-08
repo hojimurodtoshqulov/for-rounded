@@ -22,12 +22,13 @@
 		max-width: $xxl;
 	}
 	&__logo {
+		// width: 35%;
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
 		gap: 0.4rem;
 		height: 60%;
-		width: 20%;
+		width: 30%;
 		cursor: pointer;
 		color: $light;
 		animation: logo 7s 2s linear infinite;
@@ -48,7 +49,7 @@
 		}
 	}
 	&__elements {
-		width: 70%;
+		width: 65%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -109,8 +110,8 @@
 			align-items: flex-end;
 			justify-content: center;
 			gap: 0.5em;
-			&-mail {
-			}
+			// &-mail {
+			// }
 			&-language {
 				align-self: flex-end;
 				display: flex;
@@ -319,8 +320,8 @@
 				align-items: flex-end;
 				justify-content: center;
 				gap: 0.5em;
-				&-mail {
-				}
+				// &-mail {
+				// }
 				&-language {
 					align-self: flex-end;
 					display: flex;
@@ -690,7 +691,7 @@
 @media (max-width: $md) {
 	.nav {
 		&__logo {
-			width: 40%;
+			width: 60%;
 			&-img {
 				height: 80%;
 			}
@@ -727,7 +728,8 @@
 			}
 
 			h5{
-				display: none;
+				font-size: 0.7rem;
+				// display: none;
 			}
 		}
 		&__mobile {
@@ -750,9 +752,9 @@
 @media (max-width: $xs) {
 	.nav {
 		&__logo {
-			width: 45%;
+			width: 75%;
 			h5 {
-				font-size: 15px;
+				font-size: 0.6rem;
 				font-family: emoji;
 				span {
 					font-family: emoji;

@@ -1,0 +1,45 @@
+@import "../../scss/varuables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Marko+One&family=Playfair+Display:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marko+One&family=Playfair+Display:wght@600;700;800&family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Marko+One&family=Playfair+Display:wght@600;700;800&family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Marko+One&family=Playfair+Display:wght@600;700;800&family=Rozha+One&family=Yatra+One&display=swap");
+
+
+.h1{
+    background-color: rgb(235, 225, 225);
+    font-size: 60px;
+    line-height: 117.2%;
+    color: #c03b3b;
+    align-self: flex-start;
+	// font-family: monospace;
+    font-family: "Marko One", serif;
+    font-family: "Playfair Display", serif;
+    font-family: "Yatra One", cursive;
+    font-family: "Aclonica", sans-serif;
+	font-family: emoji;
+	font-weight: 200;
+	margin: 2.5rem 0;
+}
+
+@media (min-width: $xxl) {
+    .h1{
+       font-size: 80px; 
+    }
+}
+
+@media (min-width: $xl) {
+    .h1{ 
+        font-family: "Marko One", serif;
+        font-family: "Playfair Display", serif;
+        font-family: "Yatra One", cursive;
+        font-family: "Aclonica", sans-serif;
+        // font-family: "Rozha One", serif;
+        font-size: 40px;
+    }
+}
+
+@media (min-width: $md) {
+    .h1{
+        font-size: 30px;
+    }
+}
